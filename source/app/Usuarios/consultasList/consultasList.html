@@ -1,0 +1,20 @@
+<section class="SectionTab">
+  <div class="tabla" data-example-id="simple-table">
+    <h1 style="padding-bottom:.5em;border-bottom:2px solid black;">Consultas</h1><br>
+    <table class="table">
+      <thead style="background:white;">
+        <!-- <tr><th>Foto</th><th>Nombre</th><th>Apellidos</th></tr> -->
+        <th><font><font>Medico</font></th>
+        <th><font><font>Fecha</font></th>
+        <th><font><font>Descripción</font></th>
+      </thead>
+      <tbody ng-repeat="consulta in vm.consultas" style="">
+        <!-- <tr><th> scope="row"</th>1</tr> -->
+        <td scope="row"><font>{{consulta.Medico}}<font></font></font></td>
+        <td scope="row"><font>{{consulta.fechaCon}}<font></font></font></td>
+        <td scope="row"><font>{{consulta.descripcion}}<font></font></font></td>
+        <!-- <td scope="row"><font><font><a href="">Ver más</a></font></font></td>-->
+      </tbody>
+    </table>
+  </div>
+</section>

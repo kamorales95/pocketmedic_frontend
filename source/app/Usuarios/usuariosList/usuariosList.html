@@ -1,0 +1,37 @@
+  <div class="Especilidad">
+    <h1 class="md-title">Enter an address</h1>
+    <div layout="row">
+      <md-input-container>
+        <label>Especialidades</label>
+        <md-select ng-model="vm.titulos">
+          <md-option ng-repeat="titulo in vm.tituloscertificados" value="{{titulo}}">
+            {{titulo.titulos}}
+          </md-option>
+        </md-select>
+      </md-input-container>
+    </div>
+  </div>
+
+
+<section class="SectionTab">
+  <div class="tabla" data-example-id="simple-table">
+    <h1 style="padding-bottom:.5em;border-bottom:2px solid black;">Medicos</h1><br>
+    <table class="table">
+      <thead style="background:white;">
+        <!-- <tr><th>Foto</th><th>Nombre</th><th>Apellidos</th></tr> -->
+        <th><font><font>Foto</font></th>
+        <th><font><font>Nombre</font></th>
+        <th><font><font>Apellidos</font></th>
+      </thead>
+      <tbody ng-repeat="usuario in vm.usuarios" style="">
+        <!-- <tr><th> scope="row"</th>1</tr> -->
+        <td scope="row"><font><font>sin imagen de perfil</font></font></td>
+        <td scope="row"><font><font><a href="#/perfil/{{usuario.idUsuario}}">{{usuario.nombres}}</a></font></font></td>
+        <td scope="row"><font><font>{{usuario.apellidos}}</font></font></td>
+        <!-- <td scope="row"><font><font><a href="#/perfil/{{usuario.idUsuario}}">Ver más</a></font></font> -->
+        </td>
+      </tbody>
+    </table>
+  </div>
+
+</section>

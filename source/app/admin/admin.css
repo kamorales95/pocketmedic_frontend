@@ -1,0 +1,27 @@
+th {
+  text-align: center;
+}
+.User-list {
+  text-align: center;
+}
+.Table {
+  display: inline-block;
+  min-width: 90em;
+}
+.Table-tittle {
+  background: #808080;
+  color: #fff;
+  padding: 0.1em 0.5em;
+  text-align: center;
+}
+.Table-user {
+  border: 1px solid #800080;
+  text-align: center;
+}
+.Input-Search {
+  text-align: center;
+  margin-left: 53em;
+  padding-right: 4em;
+  padding-left: 4em;
+  margin-bottom: 2em;
+}

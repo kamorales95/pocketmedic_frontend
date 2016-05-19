@@ -1,0 +1,17 @@
+<section>
+
+  <form class="Form-Consultas" id="ConsultasForm" name="FormConsultas" ng-submit="vm.create()">
+    <h1 class="FormRegistro-tittle">Crear Consulta</h1>
+
+    <md-input-container class="md-block">
+      <label>Nombres</label>
+      <input md-maxlength="40" required md-no-asterisk name="nombres" ng-model="vm.usuario.nombres" id="nombre">
+      <div ng-messages="RegisterForm.nombres.$error">
+        <div ng-message="required">Este campo es requerido.</div>
+        <div ng-message="md-maxlength">El nombre no puede superar 40 caracteres.</div>
+      </div>
+    </md-input-container>
+
+  </form>
+
+</section>

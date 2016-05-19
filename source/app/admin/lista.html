@@ -1,0 +1,33 @@
+<div class="Header-admin"></div>
+<!--<a class="btn btn-primary Button-Inicio" href="#/">Ir a inicio</a>-->
+
+<label for=""></label>
+<input type="text" class="Input-Search" ng-model="vm.busqueda" placeholder="Buscar ">
+<section class="User-list">
+<!--<h3> Hola  desde list admin</h3>-->
+
+
+
+
+<div class="Table">
+  <div class="Table-tittle"><h1>Lista Usuarios Registrados</h1></div>
+
+
+
+
+<table class="table table-responsive Table-user">
+  <tr>
+    <th>Nombre</th>
+    <th>Apellidos</th>
+    <th>email</th>
+    <th></th>
+  </tr>
+<tr ng-repeat="usuario in vm.usuarios | filter: vm.busqueda">
+    <td>{{usuario.nombre}}</td>
+    <td>{{usuario.apellido}}</td>
+    <td>{{usuario.email}}</td>
+    <td><input type="submit" value="Ver Perfil" href="#/" class="btn btn-info"/>
+</tr>
+</table>
+</div>
+</section>

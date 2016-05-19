@@ -1,0 +1,27 @@
+<section style="margin-top:5em;">
+    <form id="FormRegistro" name="ConsultaForm" ng-submit="vm.create()">
+
+      <md-input-container class="md-block">
+        <label>Descripción</label>
+        <input md-maxlength="100" required md-no-asterisk name="nombres" ng-model="vm.consultas.descripcion" id="descripcion">
+        <div ng-messages="ConsultaForm.descripcion.$error">
+          <div ng-message="required">Este campo es requerido.</div>
+          <div ng-message="md-maxlength">La Descripción no puede superar 100 caracteres.</div>
+        </div>
+      </md-input-container>
+
+      <!-- <div class="">
+        <label style="color:#c0c0c0; margin-bottom:1em;">Fecha</label><br>
+        <md-datepicker ng-model="vm.consultas.fechaCon" required md-placeholder="Fecha" md-max-date="vm.dateMax" name="fechaCon" id="fecha"></md-datepicker>
+          <div ng-messages="ConsultaForm.fechaCon.$error">
+            <div ng-message="required">Este campo es requerido.</div>
+          </div>
+      </div> -->
+
+      
+
+      <md-button type="submit" class="md-raised md-primary" id="BotonGuardar" ng-disabled="ConsultaForm.$invalid" ng-model="Guardar">Guardar</md-button>
+      <md-button ng-href="/" class="md-raised md-warn">Cancelar</md-button>
+
+    </form>
+</section>

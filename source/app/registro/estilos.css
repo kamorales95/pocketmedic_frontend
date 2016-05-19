@@ -1,0 +1,42 @@
+.SectionRegistro {
+  text-align: center;
+  background-image: url("../../img/medicine_phixr.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: fixed;
+  padding: 8em;
+}
+.FormRegistro {
+  background-color: #fffafa;
+  display: inline-block;
+  padding: 2em;
+  border-radius: 0.5em;
+  box-shadow: 0.1em 0.1em #555;
+  width: 30em;
+/*background-image url('../../img/medicine_phixr.png')*/
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: Snow;
+  text-align: center;
+}
+.FormRegistro-input {
+  margin-bottom: 1em;
+  border-radius: 1em;
+}
+.FormRegistro-tittle {
+  color: #000;
+}
+@media screen and (min-width: 349px) {
+  .FormRegistro {
+    padding: 1em;
+    width: 24em;
+    margin-left: -106px;
+    margin-top: 45px;
+  }
+  .FormRegistro-title {
+    margin-bottom: 1em;
+    border-radius: 1em;
+    color: #000;
+  }
+}

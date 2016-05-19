@@ -1,0 +1,100 @@
+<header class="Header">
+  <div class="navbar  MainMenu">
+  <div class="container-fluid" style="padding:0;">
+    <!-- responsive movil -->
+    <div class="navbar-header">
+      <a class="navbar-brand MainMenu-linkLogo" href="/" ><figure class="MainMenu-logo"><img src="../../img/LOGO.png" width="100"/></figure></a>
+      <button type="button" class="navbar-toggle"  data-target=".navbar-inverse-collapse" onclick="showMainMenuPrimary();">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+
+    </div>
+
+    <!-- view desktop -->
+    <div id="MainMenuPrimary" class="navbar-collapse collapse">
+
+      <!--Usuario Logeado-->
+      <ul class="nav navbar-nav navbar-right">
+        <ul class="nav navbar-nav navbar-right" ng-show="vm.isAuthenticated()">
+          <div class="btn-group">
+            <button type="button"  style="padding:.5em; margin-right:1em;" class="btn btn-default dropdown-toggle button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"  >
+              {{vm.getCurrentUser()}} <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu">
+              <li><a href="#/perfil/{{vm.getIdCurrentUser()}}">Mi Perfil</a></li>
+              <li><a href="#/usuariosList">Médicos</a></li>
+              <li><a href="#/consultasList">Lista de consultas</a></li>
+              <li><a href="#/configuser/{{vm.getIdCurrentUser()}}">Configuración</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#/"  ng-click="vm.logout()">Cerrar Sesión</a></li>
+            </ul>
+          </div>
+        </ul>
+
+
+<!-- <div ng-controller="AppCtrl" layout="column" style="height:500px;" ng-cloak style="width:20%;display:inline-block;">
+  <section layout="row" flex>
+    <div>
+      <md-button ng-click="toggleRight()"
+        ng-hide="isOpenRight()"
+        class="md-primary">
+          Toggle right
+        </md-button>
+        </div>
+      </div>
+      <div flex></div>
+    </md-content>
+    <md-sidenav class="md-sidenav-right md-whiteframe-z2" md-component-id="right">
+      <md-toolbar class="md-theme-light">
+        <h1 class="md-toolbar-tools">Sidenav Right</h1>
+      </md-toolbar>
+      <md-content ng-controller="RightCtrl" layout-padding>
+        <md-button ng-click="close()" class="md-primary">
+          Close Sidenav Right
+        </md-button>
+      </md-content>
+    </md-sidenav>
+  </section>
+</div> -->
+
+
+
+
+
+
+        <!--HASTA Aqui-->
+        <li ng-show="!vm.isAuthenticated()"><a href="" onclick="showLogin()" class="MainMenu-link Top" >Iniciar Sesión</a>
+          <div id="PanelLogin" class="PanelLogin z-depth-1">
+            <form class="PanelLogin-form" ng-hide="vm.isAuthenticated()" role="form" ng-submit="vm.signIn()">
+              <md-input-container class="md-block">
+                <label>Email*</label>
+                <input style="border-bottom-color:#2271b3" required type="email" name="email" ng-model="vm.user.email"
+                       minlength="10" maxlength="100" ng-pattern="/^.+@.+\..+$/"/>
+                <div ng-messages="vm.usuario.email.$error" role="alert">
+                  <div ng-message-exp="['required', 'minlength', 'maxlength', 'pattern']">
+                    El Email No Puede Superar Los 100 Caracteres / El Email No Es Valido.
+                  </div>
+                </div>
+              </md-input-container>
+              <md-input-container class="md-block">
+                <label>Password*</label>
+                <input style="border-bottom-color:#2271b3" required type="password" name="password" ng-model="vm.user.password">
+                <div ng-messages="vm.usuario.password.$error">
+                  <div ng-message="required">This is required.</div>
+                </div>
+              </md-input-container>
+              <md-button md-no-ink class="md-raised md-primary" ng-click="vm.signIn()" type="submit" style="background:#2271b3;color:white;">Login</md-button>
+            </form>
+          </div>
+          <li><a href="#/registro" class="MainMenu-link Bop" ng-show="!vm.isAuthenticated()">Registrarse</a></li>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+</div>
+<!-- <md-progress-linear class="md-warn" md-mode="buffer" value="{{vm.determinateValue}}" md-buffer-value="{{vm.determinateValue2}}" ng-disabled="!vm.showList[0]"></md-progress-linear> -->
+
+</header>
