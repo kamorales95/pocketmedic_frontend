@@ -4,14 +4,14 @@
       <md-input-container>
         <label>Especialidades</label>
         <md-select ng-model="vm.titulos">
-          <md-option ng-repeat="titulo in vm.tituloscertificados" value="{{titulo}}">
+          <md-option ng-repeat="titulo in vm.tituloscertificados" value="{{titulo.titulos}}">
             {{titulo.titulos}}
           </md-option>
         </md-select>
       </md-input-container>
     </div>
+    <button type="submit" ng-click="vm.consulta()">consulta</button>
   </div>
-
 
 <section class="SectionTab">
   <div class="tabla" data-example-id="simple-table">
@@ -23,11 +23,13 @@
         <th><font><font>Nombre</font></th>
         <th><font><font>Apellidos</font></th>
       </thead>
-      <tbody ng-repeat="usuario in vm.usuarios" style="">
+      <tbody ng-repeat="usuario in vm.usuarios" style="" ng-controller="LoginController as login">
         <!-- <tr><th> scope="row"</th>1</tr> -->
         <td scope="row"><font><font>sin imagen de perfil</font></font></td>
         <td scope="row"><font><font><a href="#/perfil/{{usuario.idUsuario}}">{{usuario.nombres}}</a></font></font></td>
         <td scope="row"><font><font>{{usuario.apellidos}}</font></font></td>
+        <td scope="row"><font><font><a href="#/consulta/{{login.getIdCurrentUser()}}/{{usuario.idUsuario}}">Crear consulta</a></font></font></td>
+
         <!-- <td scope="row"><font><font><a href="#/perfil/{{usuario.idUsuario}}">Ver más</a></font></font> -->
         </td>
       </tbody>

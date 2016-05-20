@@ -1,4 +1,4 @@
-.Sectionconsulta {
+.Sectioneliminar {
   text-align: center;
 /*background-image url('../../img/medicine_phixr.png')*/
   background-color: #bbdefb;
@@ -7,7 +7,7 @@
   background-position: fixed;
   padding: 10em;
 }
-.FormConsulta {
+.Formeliminar {
   background-color: #fffafa;
   display: inline-block;
   padding: 2em;
@@ -21,24 +21,24 @@
   color: Snow;
   text-align: center;
 }
-.FormConsulta-input {
+.Formeliminar-input {
   margin-bottom: 1em;
   border-radius: 1em;
 }
-.FormConsulta-tittle {
+.Formeliminar-tittle {
   color: #000;
   padding-bottom: 0.5em;
   border-bottom: 2px solid #448aff;
   margin-bottom: 1em;
 }
 @media screen and (max-width: 349px) {
-  .FormConsulta {
+  .Formeliminar {
     padding: 1em;
     width: 24em;
     margin-left: -106px;
     margin-top: 45px;
   }
-  .FormConsulta-title {
+  .Formeliminar-title {
     margin-bottom: 1em;
     border-radius: 1em;
     color: #000;

@@ -75,6 +75,7 @@
   text-decoration: none;
   border-radius: 15px;
   padding: 0.2em 0;
+  transition: 0.7s;
 }
 .icon-facebook3:hover {
   background: #55acee;
@@ -121,6 +122,10 @@
   height: auto;
   vertical-align: top;
 }
+.MainMenu-footer {
+  color: #fff;
+  transition: 0.9s;
+}
 .Footer-item {
   display: block;
   margin: 0.3em;
@@ -133,8 +138,4 @@
   padding: 0.2em;
   text-decoration: none;
   color: #fff;
-}
-.MainMenu-Link:hover {
-  color: #1565c0;
-  transition: 0.6s;
 }

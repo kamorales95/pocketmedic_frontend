@@ -25,7 +25,9 @@
         vm.create = function() {
           console.log('titulo');
           console.log(vm.tituloscertificados);
+          if(vm.tituloscertificados!=null){
           vm.usuario.tituloCertificadoList=[{idProfesiones: vm.tituloscertificados.idProfesiones, titulos: vm.tituloscertificados.titulos}];
+          }
           vm.usuario.idRol=vm.SelectRol;
             Usuarios.save(vm.usuario, function() {
               $location.path('/');

@@ -1,70 +1,40 @@
-.formconsulta
-  max-width 40em
+.Sectionconsulta
   text-align center
+  /*background-image url('../../img/medicine_phixr.png')*/
+  background-color: #BBDEFB
+  background-repeat no-repeat
+  background-size cover
+  background-position fixed
+  padding 10em
+.FormConsulta
+    background-color snow
+    display inline-block
+    padding 2em
+    border-radius 0.7em
+    box-shadow 0.4em 0.4em #90CAF9
+    width 50em
+    /*background-image url('../../img/medicine_phixr.png')*/
+    background-repeat no-repeat
+    background-position center
+    background-size cover
+    color Snow
+    text-align center
+    &-input
+      margin-bottom 1em
+      border-radius 1em
+    &-tittle
+      color black
+      padding-bottom: .5em
+      border-bottom: 2px solid #448AFF
+      margin-bottom: 1em
 
-.FormContent
-  text-align center
-  padding-left 12em
-
-.apellido
-  /** height 5em**/
-  margin-top 2em
-  display inline-block
-  /**width 16%**/
-  /**width 20%**/
-  text-align center
-  width 100%
-
-.formconsulta
-  margin-top: -8em;
-  margin-left 10em
-
-.sexo
-  margin-top 1em
-
-.botones
-  color black
-  border 2px
-  padding .5em
-
-.fecha
-  margin-top 2em
-
-.nombre
-  margin-top 2em
-  display inline-block
-  width 100%
-  /**width 16%**/
-  margin-top 20em
-
-.apellido1
-  display inline-block
-
-.boton-enviar
-  border-radius 3em
-  background rgb(63,81,181)
-  margin-right 1em
-
-.boton-enviar:hover
-  background white
-
-
-.boton-cancelar
-  background rgb(63,81,181)
-  border-radius 3em
-
-
-.boton-cancelar:hover
-  background white
-
-.sectionConsulta
-  text-align center
-  /**margin 0 0 0 42em**/
-  padding-bottom 5em
-
-.form-group
-  text-align center
-  display inline-block
-
-.cuadro-de-texto
-  margin-right 15 em
+@media screen and (max-width: 349px)
+    .FormConsulta
+      padding: 1em
+      width: 24em
+      margin-left: -106px
+      margin-top: 45px
+      &-title
+        margin-bottom 1em
+        border-radius 1em
+        color black

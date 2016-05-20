@@ -1,0 +1,36 @@
+<section class="Sectioneliminar">
+    <form id="Formeliminar" name="Formeliminar" ng-submit="vm.create()" class="Formeliminar">
+      <h1 class="Formeliminar-tittle">Eliminar Mi Cuenta</h1>
+
+      <md-input-container class="md-block">
+        <label>Email</label>
+        <input type="email"  md-maxlength="50" required md-no-asterisk name="email"
+               ng-pattern="/^.+@.+\..+$/" ng-model="vm.usuario.email" id="email">
+        <div ng-messages="RegisterForm.email.$error">
+          <div ng-message-exp="['required', 'maxlength', 'pattern']">
+              El Email No Debe Pasar Los 50 Caracteres / El Email En Invalido.
+            </div>
+        </div>
+      </md-input-container>
+
+      <md-input-container class="md-block">
+        <label>Contraseña</label>
+        <input md-maxlength="20" type="password" required md-no-asterisk name="password" ng-model="vm.usuario.password" id="password">
+        <div ng-messages="RegisterForm.password.$error">
+          <div ng-message="required">Este campo es requerido.</div>
+          <div ng-message="md-maxlength">El nombre no puede superar 60 caracteres.</div>
+        </div>
+      </md-input-container>
+
+      <section layout="row" layout-sm="column" layout-align="center center" layout-wrap style="margin-top:.5em;">
+          <md-button type="submit" class="md-raised md-primary" id="Guardar" ng-disabled="Formeliminar.$invalid"
+                     ng-model="Guardar"
+                     style="background:#4FC3F7;color:white;padding:1px 5em;">Enviar</md-button>
+          <md-button ng-href="/" class="md-raised md-warn" style="background:#01579B;color:white;padding:1px 5em;">Cancelar</md-button>
+      </section>
+
+      <!-- <md-button type="submit" class="md-raised md-primary" id="BotonGuardar" ng-disabled="ConsultaForm.$invalid" ng-model="Guardar">Guardar</md-button>
+      <md-button ng-href="/" class="md-raised md-warn">Cancelar</md-button> -->
+
+    </form>
+</section>

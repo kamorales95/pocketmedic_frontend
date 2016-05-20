@@ -1,16 +1,16 @@
-<section class="SectionPerfil" style="text-align:centrer;">
+<section class="SectionPerfilC" style="text-align:centrer;">
   <article class="FormPerfil" style="display:block;">
 
-    <h1 style="border-bottom: 2px solid #1E0C53; padding-bottom:.5em;color:#2271b3; text-align:center;">Perfil</h1>
+    <h1 class="ConfiC" >Configuración</h1>
 
-     <figure class="FormPerfil-img"  >
-       <img class="messeger" src="../../img/messenger.jpg" width="20%"/>
+     <figure class="FormPerfil-imgC"  >
+       <img class="messegerC" src="../../img/messenger.jpg" style="width:100%"/>
      </figure>
-      <label style="float: left">Foto</label>
-  <form class="usuarioPerfil" name="formConfig">
-    <div class="infoPersonal">
 
-    <label style="margin-bottom:2em;border-bottom: 2px display:block; color:black;">Información personal</label><br>
+  <form class="usuarioPerfilC" name="formConfig">
+    <div class="infoPersonalC">
+
+    <label class="InfoC" >Información personal</label><br>
 
     <md-input-container class="md-block">
     <label>Nombre</label>
@@ -24,34 +24,57 @@
     </div>
 
       <div>
-      <label style="margin-bottom:2em;border-bottom: 2px solid black;display:block;">Información de contacto</label><br>
+    <label class="Contac">Información de contacto</label><br>
+
+  <md-input-container class="md-block">
+        <label>Sexo</label>
+        <input required md-no-asterisk name="sexo" ng-model="vm.usuario.sexo" style="color:black;">
+  </md-input-container>
+
+  <md-input-container class="md-block">
+    <label>Fecha Nacimiento</label>
+    <input required md-no-asterisk name="direccion" ng-model="vm.usuario.fechaNac" style="color:black;">
+  </md-input-container>
 
   <md-input-container class="md-block">
     <label>Teléfono</label>
     <input required md-no-asterisk name="telefono" ng-model="vm.usuario.telefono" style="color:black;">
   </md-input-container>
 
+  <md-input-container class="md-block">
+    <label>Ubicación</label>
+    <input required md-no-asterisk name="direccion" ng-model="vm.usuario.direccion" style="color:black;">
+  </md-input-container>
+  <md-input-container class="md-block">
+    <label>Email</label>
+    <input type="email" ng-pattern="/^.+@.+\..+$/" required md-no-asterisk name="email" ng-model="vm.usuario.email" style="color:black;">
+  </md-input-container>
+  <section>
+    <h1 style="color:#2271b3;">Inhabilitar cuenta</h1>
+    <p>Tenga presente que si usted deshabilita su cuenta, esta quedara inactiva hasta que vuelva a iniciar sesión con ella</p>
+    <!-- <md-button class="md-raised md-primary" style="padding:0 10em;">Inhabilitar</md-button> -->
+    <md-checkbox  style="color:#0000;font-weight:bold;" class="md-primary" name="TerminosCondiciones" id="chekched" ng-model="vm.usuario.estado" >Inhabilitar Mi Cuenta</md-checkbox>
+  </section>
+    </div>
+    <section layout="row" layout-sm="column" layout-align="center center" layout-wrap>
+
+  <md-button ng-click="vm.update()" ng-disabled="formConfig.$invalid" class="buttomC"
+  class="md-raised" style="background:#4FC3F7; color:white;">Guardar</md-button>
+
+    <md-button ng-disabled="formConfig.$invalid" href="/" class="buttom1C" style="background:#01579B;color:white;">Cancelar</md-button>
+
+    </section><br>
+  </form>
+  </article>
+</section>
+
+
+
   <!-- <md-input-container class="md-block" ng-show="!(vm.SelectRol.idRol === 'USER')">
     <label>Tarjeta Profesional</label>
     <input type="text"  md-no-asterisk name="tarjetaProfesional"  style="color:black;"
            ng-model="vm.usuario.tarjetaProfesional"  id="tarjeta">
   </md-input-container> -->
-
-      <md-input-container class="md-block">
-        <label>Dirección</label>
-        <input required md-no-asterisk name="direccion" ng-model="vm.usuario.direccion" style="color:black;">
-      </md-input-container>
-
-      <md-input-container class="md-block">
-        <label>Email</label>
-        <input type="email" ng-pattern="/^.+@.+\..+$/" required md-no-asterisk name="email" ng-model="vm.usuario.email" style="color:black;">
-      </md-input-container>
-      <section>
-        <h1>Inhabilitar cuenta</h1>
-        <p>Tenga en cuenta que si usted desabilita su cuanta no podras volver a iniciar sesión con ella</p>
-        <!-- <md-button class="md-raised md-primary" style="padding:0 10em;">Inhabilitar</md-button> -->
-        <md-checkbox  style="color:#00000;font-weight:blod;" class="md-primary" name="TerminosCondiciones" id="chekched" ng-model="vm.usuario.estado" >Inhabilitar Mi Cuenta</md-checkbox>
-      </section>
 
       <!-- <md-autocomplete md-selected-item="vm.usuario.ciudades" md-search-text="vm.searchTextCiudades" ng-disabled="true"
                        md-items="item in vm.queryCiudades(vm.searchTextCiudades)"
@@ -63,18 +86,10 @@
         </md-item-template>
       </md-autocomplete> -->
 
-    </div>
+
     <!-- <md-button ng-click="vm.update()" ng-disabled="usuariosCreate.$invalid" class="md-raised md-primary" style="padding:0 10em;">Guardar</md-button>
     <md-button ng-disabled="usuariosCreate.$invalid" class="md-raised md-warn" style="padding:0 10em;">Cancelar</md-button> -->
 
-    <section layout="row" layout-sm="column" layout-align="center center" layout-wrap>
-
-      <md-button ng-click="vm.update()" ng-disabled="formConfig.$invalid" class="buttom"
-      class="md-raised" style="background:#4FC3F7;color:white;">Guardar</md-button>
-
-        <md-button ng-disabled="formConfig.$invalid" href="/" class="buttom1" style="background:#01579B;color:white;">Cancelar</md-button>
-
-    </section><br>
 
     <!-- <section>
       <h1>Inhabilitar cuenta</h1>
@@ -82,8 +97,3 @@
       <md-button class="md-raised md-primary" style="padding:0 10em;">Inhabilitar</md-button>
       <md-checkbox required style="color:#C0C0C0;font-weight:blod;" class="md-primary" name="TerminosCondiciones" id="chekched" >Inhabilitar Mi Cuenta</md-checkbox>
     </section> -->
-
-
-  </form>
-  </article>
-</section>
