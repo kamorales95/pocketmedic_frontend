@@ -21,7 +21,9 @@
         'app.Usuarios',
         'app.configuracion',
         'sidenavDemo1',
-        'app.tituloscertificados'
+        'app.tituloscertificados',
+        'app.recuperarcontraseña',
+        'app.nuevacontraseña'
 
 
 

@@ -86,6 +86,7 @@
                 </div>
               </md-input-container>
               <md-button md-no-ink class="md-raised md-primary" ng-click="vm.signIn()" type="submit" style="background:#2271b3;color:white;">Login</md-button>
+              <li><a href="#/recuperarcontraseña" class="" ng-show="!vm.isAuthenticated()">¿Olvidaste tu contraseña?</a></li>
             </form>
           </div>
           <li><a href="#/registro" class="MainMenu-link Bop" ng-show="!vm.isAuthenticated()">Registrarse</a></li>

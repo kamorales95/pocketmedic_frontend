@@ -1,0 +1,37 @@
+<div class="container-login" style=" background: #f1f1f1;">
+
+            <div class="login-form-recuperar">
+              <div class="loginform-recuperar">
+                <span class="titulo-recuperar" >RESTABLECER CONTRASEÑA</span>
+              <form name="loginForm"
+							                 class=""
+							                 role="Username"
+							                 ng-hide="vm.isAuthenticated()"
+							                 ng-submit="vm.signIn()"
+							                 novalidate>
+							          <div class="containerEmail-recuperar">
+							            <input type="password"
+							                   class="emaiLogin-recuperar"
+							                   placeholder="Nueva Contraseña"
+							                   required
+							                  />
+							          </div>
+                        <div class="containerEmail-recuperar">
+                          <input type="password"
+                                 class="emaiLogin-recuperar"
+                                 placeholder="Repita Contraseña"
+                                 required
+                                />
+                        </div>
+
+							            <button type="submit"
+							                    ng-disable="loginForm.$invalid"
+							                    class="bottom-recuperar"
+                                  >Enviar</button>
+
+							        </form>
+                      </div>
+                  </div>
+
+
+</div>

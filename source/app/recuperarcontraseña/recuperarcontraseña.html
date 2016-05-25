@@ -1,0 +1,18 @@
+<div class="container-login" style=" background: #f1f1f1;">
+  <div class="login-form-recuperar">
+    <div class="loginform-recuperar">
+      <span class="titulo-recuperar" >INGRESA TU CORREO </span>
+        <form name="loginForm" role="Username" ng-hide="vm.isAuthenticated()" ng-submit="vm.signIn()" novalidate>
+					<div class="containerEmail-recuperar">
+						<input type="email" class="emaiLogin-recuperar" placeholder="Email" ng-pattern="/^.+@.+\..+$/" ng-model="vm.usuario.email"/>
+            <div ng-messages="loginForm.email.$error">
+              <div ng-message="pattern">
+                  El Email No Debe Pasar Los 50 Caracteres / El Email En Invalido.
+                </div>
+            </div>
+					</div>
+          <button type="submit" ng-disable="loginForm.$invalid" class="bottom-recuperar">Enviar</button>
+        </form>
+    </div>
+  </div>
+</div>
