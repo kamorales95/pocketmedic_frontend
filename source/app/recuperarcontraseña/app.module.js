@@ -3,7 +3,8 @@
 
     angular.module('app.recuperarcontraseña', [
         'app.recuperarcontraseña.directivas',
-        'app.recuperarcontraseña.router'
+        'app.recuperarcontraseña.router',
+        'app.email.controller'
     ]);
 
 })();

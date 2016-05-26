@@ -1,17 +1,18 @@
-<div class="container-login" style=" background: #f1f1f1;">
+<div class="container-login" style="">
   <div class="login-form-recuperar">
     <div class="loginform-recuperar">
-      <span class="titulo-recuperar" >INGRESA TU CORREO </span>
+      <h2 class="titulo-recuperar" >¿Has olvidado tu contraseña?</h2><br>
+      <h4 class="subtitulo-recuperar" >Para restablecer la contraseña, introduce la dirección de correo electronico que utilizas para iniciar sesión en Pocket Medic</h4>
         <form name="loginForm" role="Username" ng-hide="vm.isAuthenticated()" ng-submit="vm.signIn()" novalidate>
 					<div class="containerEmail-recuperar">
-						<input type="email" class="emaiLogin-recuperar" placeholder="Email" ng-pattern="/^.+@.+\..+$/" ng-model="vm.usuario.email"/>
+						<input type="email" class="emaiLogin-recuperar" placeholder="Email" ng-pattern="/^.+@.+\..+$/" ng-model="vm.recoveryPassword.email"/>
             <div ng-messages="loginForm.email.$error">
               <div ng-message="pattern">
                   El Email No Debe Pasar Los 50 Caracteres / El Email En Invalido.
                 </div>
             </div>
 					</div>
-          <button type="submit" ng-disable="loginForm.$invalid" class="bottom-recuperar">Enviar</button>
+          <button type="submit" ng-disable="loginForm.$invalid" class="bottom-recuperar" ng-click="vm.enviar()">Enviar</button>
         </form>
     </div>
   </div>

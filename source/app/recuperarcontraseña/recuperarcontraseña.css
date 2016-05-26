@@ -3,13 +3,13 @@
   height: auto;
   overflow: hidden;
   width: 68%;
-  padding-bottom: 25em;
+  padding-bottom: 24em;
   margin: auto;
-  padding-top: 20.3em;
-  background: #f1f1f1;
+  padding-top: 14.2em;
+  background: #fff;
 }
-.titulo-recuperar {
-  font-size: 21px;
+.titulo-recuperar,
+.subtitulo-recuperar {
   color: #2271b3;
 }
 .share-buttons {
@@ -42,6 +42,24 @@
   background-color: #2271b3;
   outline: 0;
   display: inline-block;
+}
+@media screen and (max-width: 424px) {
+  .container-login {
+    padding-bottom: 8em;
+    padding-top: 8em;
+  }
+}
+@media screen and (max-width: 424px) {
+  .container-login {
+    padding-bottom: 8em;
+    padding-top: 8em;
+  }
+}
+@media screen and (max-width: 720px) {
+  .container-login {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
 }
 @media screen and (max-width: 1649px) {
   .container-login {

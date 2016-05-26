@@ -2,6 +2,7 @@
     'use strict';
 
     angular.module('app.recuperarcontraseña.router', [
+      'app.email.controller'
 
     ])
         .config(configure);
