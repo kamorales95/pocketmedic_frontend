@@ -1,39 +1,42 @@
-  <div class="Especilidad">
-    <h1 class="md-title">Enter an address</h1>
-    <div layout="row">
-      <md-input-container>
-        <label>Especialidades</label>
-        <md-select ng-model="vm.titulos">
-          <md-option ng-repeat="titulo in vm.tituloscertificados" value="{{titulo.titulos}}">
-            {{titulo.titulos}}
-          </md-option>
-        </md-select>
-      </md-input-container>
-    </div>
-    <button type="submit" ng-click="vm.consulta()">consulta</button>
-  </div>
+<div class="ListUsers-Content">
+  <section class="SectionTabUsers">
+      <div class="tablaUsers" data-example-id="simple-table">
+        <h1 style="padding-bottom:.5em;border-bottom:2px solid black; display:inline-block; font-size:20px">Medico</h1><br>
+        <md-input-container>
+          <label>Especialidades</label>
+          <md-select ng-model="vm.titulos">
+            <md-option ng-repeat="titulo in vm.tituloscertificados" value="{{titulo.titulos}}">
+              {{titulo.titulos}}
+            </md-option>
+          </md-select>
+        </md-input-container>
+        <button type="submit" ng-click="vm.consulta()">consulta</button>
+        <table class="table table-bordered SectionTabUsers-table">
+          <tr>
+            <thead style="background:black;">
+              <th><font style="color:white;"><font>Foto</font></th>
+              <th><font style="color:white;"><font>Nombre</font></th>
+              <th><font style="color:white;"><font>Apellidos</font></th>
+            </thead>
+            <!-- <tbody ng-repeat="usuario in vm.usuarios" style="" ng-controller="LoginController as login">
+              <td scope="row"><font><font>sin imagen de perfil</font></font></td>
+              <td scope="row"><font><font><a href="#/perfil/{{usuario.idUsuario}}">{{usuario.nombres}}</a></font></font></td>
+              <td scope="row"><font><font>{{usuario.apellidos}}</font></font></td>
+              <td scope="row"><font><font><a href="#/consulta/{{login.getIdCurrentUser()}}/{{usuario.idUsuario}}">Crear consulta</a></font></font></td>
+            </tbody> -->
+            <td data-title="'Foto'" >
+                <!-- {{user.nombre}} -->
+            </td>
+            <td data-title="'Nombre'" >
+                {{usuario.nombres}}<a href="#/perfil/{{usuario.idUsuario}}">   Ver perfil</a>
+            </td>
+            <td data-title="'Apellidos'" >
+                {{usuario.apellidos}}
+            </td>
+            <td scope="row"><font><font><a href="#/consulta/{{login.getIdCurrentUser()}}/{{usuario.idUsuario}}">Crear consulta</a></font></font></td>
+          </tr>
 
-<section class="SectionTab">
-  <div class="tabla" data-example-id="simple-table">
-    <h1 style="padding-bottom:.5em;border-bottom:2px solid #64b5f6; color:#64b5f6;">Medicos</h1><br>
-    <table class="table">
-      <thead style="background:#eee;">
-        <!-- <tr><th>Foto</th><th>Nombre</th><th>Apellidos</th></tr> -->
-        <th><font><font>Foto</font></th>
-        <th><font><font>Nombre</font></th>
-        <th><font><font>Apellidos</font></th>
-      </thead>
-      <tbody ng-repeat="usuario in vm.usuarios" style="" ng-controller="LoginController as login">
-        <!-- <tr><th> scope="row"</th>1</tr> -->
-        <td scope="row"><font><font>sin imagen de perfil</font></font></td>
-        <td scope="row"><font><font><a href="#/perfil/{{usuario.idUsuario}}">{{usuario.nombres}}</a></font></font></td>
-        <td scope="row"><font><font>{{usuario.apellidos}}</font></font></td>
-        <td scope="row"><font><font><a href="#/consulta/{{login.getIdCurrentUser()}}/{{usuario.idUsuario}}">Crear consulta</a></font></font></td>
-
-        <!-- <td scope="row"><font><font><a href="#/perfil/{{usuario.idUsuario}}">Ver más</a></font></font> -->
-        </td>
-      </tbody>
-    </table>
-  </div>
-
-</section>
+        </table>
+      </div>
+    </section>
+</div>
