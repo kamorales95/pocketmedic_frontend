@@ -1,7 +1,7 @@
-<section class="SectionPerfil">
+<!-- <section class="SectionPerfil">
   <article class="FormPerfil" style="display:block;">
 
-      <h1 class="textPer"> Bienvenido Doctor  </h1>
+      <h1 class="textPer"> Bienvenido   </h1>
 
        <figure class="FormPerfil-img"  >
          <img class="messeger" src="../../img/messenger.jpg" />
@@ -12,14 +12,14 @@
 
     <div class="infoPersonal">
 
-    <md-input-container class="md-block">
+    <md-input-container class="name">
     <label>Nombre</label>
-      <input required md-no-asterisk name="nombres" name="apellidos" ng-model="vm.usuario.nombres + vm.usuario.apellidos"  ng-disabled="true" style="color:black;">
+      <input required md-no-asterisk name="nombres" name="apellidos" ng-model="vm.usuario.nombres + vm.usuario.apellidos"  ng-disabled="true";>
 
      </md-input-container>
-     <md-input-container class="md-block form-group has-success" >
+     <md-input-container class="especial" >
      <label>Especialidad</label>
-    <input required md-no-asterisk name="Especialidad"  ng-model="vm.titulosycertificados" ng-disabled="true" style="color:black;">
+    <input required md-no-asterisk name="Especialidad"  ng-model="vm.titulosycertificados" ng-disabled="true ;">
     </md-input-container>
   </div> <br> <br>
 
@@ -29,47 +29,80 @@
       <div>
       <label  class="Infocontacto" > <p class="labeltext"> Información de contacto </p></label><br>
 
-  <md-input-container class="md-block">
+  <md-input-container class="tel">
     <label>Teléfono</label>
-    <input required md-no-asterisk name="telefono" ng-model="vm.usuario.telefono" ng-disabled="true" style="color:black;">
+    <input required md-no-asterisk name="telefono" ng-model="vm.usuario.telefono" ng-disabled="true";>
   </md-input-container>
 
-  <!-- <md-input-container class="md-block" ng-show="!(vm.SelectRol.idRol === 'USER')">
-    <label>Tarjeta Profesional</label>
-    <input type="text"  md-no-asterisk name="tarjetaProfesional" ng-disabled="true"  style="color:black;"
-           ng-model="vm.usuario.tarjetaProfesional"  id="tarjeta">
-  </md-input-container> -->
 
-      <md-input-container class="md-block">
+
+      <md-input-container class="direc">
         <label>Dirección</label>
-        <input required md-no-asterisk name="direccion" ng-model="vm.usuario.direccion" ng-disabled="true" style="color:black;">
+        <input required md-no-asterisk name="direccion" ng-model="vm.usuario.direccion" ng-disabled="true";>
       </md-input-container>
 
-      <md-input-container class="md-block">
+      <md-input-container class="correo">
         <label>Email</label>
-        <input type="email" ng-pattern="/^.+@.+\..+$/" required md-no-asterisk name="email" ng-model="vm.usuario.email" ng-disabled="true" style="color:black;">
+        <input type="email" ng-pattern="/^.+@.+\..+$/" required md-no-asterisk name="email" ng-model="vm.usuario.email" ng-disabled="true";>
       </md-input-container>
 
     </md-input-container> <br>
   </div>
-    <md-button ng-disabled="formConfig.$invalid" href="/" class="buttom1">ENVIAR MENSAJE</md-button> <br>
-
-    <!-- <article class="mapaContainer"> -->
-    <!-- <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15928.967642360769!2d-76.30892231359216!3d3.5315189915181837!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3a04e892ee5ced%3A0x641d628b9da7937a!2sPalmira%2C+Valle+del+Cauca%2C+Colombia!5e0!3m2!1ses!2sit!4v1463413977659" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe> -->
-  <!-- </article> -->
-
-    <!-- <md-autocomplete md-selected-item="vm.usuario.ciudades" md-search-text="vm.searchTextCiudades" ng-disabled="true"
-                       md-items="item in vm.queryCiudades(vm.searchTextCiudades)"
-                       md-item-text="item.nombreCiudad + ' - ' + item.departamentos.nombreDepartamento"
-                       md-min-length="1" md-floating-label="Ciudad"  required name="ciudadDomicilio" id="ciudad">
-        <md-item-template>
-          <span  style="color:black;" md-highlight-text="vm.searchTextCiudades" md-highlight-flags="^i">
-            {{item.nombreCiudad}} - {{item.departamentos.nombreDepartamento}}</span>
-        </md-item-template>
-      </md-autocomplete> -->
-      <!-- <md-button ng-disabled="FormPerfil.$invalid" href="/" class="buttom1">Crear Consulta</md-button> -->
 
 
   </form>
   </article>
+</section> -->
+
+<section class="Profile-container">
+  <form class="ProfileForm">
+    <div class="HeaderForm">
+      <h1 class="text-center Profile-title">Bienvenido</h1>
+       <figure class="ProfileImage-container">
+         <img class="Profile-image" src="../../img/messenger.jpg" />
+       </figure>
+    </div>
+
+    <div class="infoPersonal">
+
+    <md-input-container class="name">
+    <label>Nombre</label>
+      <input required md-no-asterisk name="nombres" name="apellidos" ng-model="vm.usuario.nombres + vm.usuario.apellidos"  ng-disabled="true" ;>
+
+     </md-input-container>
+     <md-input-container class="especial" >
+     <label>Especialidad</label>
+    <input required md-no-asterisk name="Especialidad"  ng-model="vm.tituloscertificados"  ng-disabled="true";>
+    </md-input-container>
+  </div> <br> <br>
+
+
+
+
+
+      <label > <p class="labeltext"> Información de contacto </p></label><br>
+
+      <div class="Infocontacto">
+
+  <md-input-container class="tel">
+    <label>Teléfono</label>
+    <input required md-no-asterisk name="telefono" ng-model="vm.usuario.telefono" ng-disabled="true";>
+  </md-input-container>
+
+
+
+      <md-input-container class="direc">
+        <label>Dirección</label>
+        <input required md-no-asterisk name="direccion" ng-model="vm.usuario.direccion" ng-disabled="true";>
+      </md-input-container>
+
+      <md-input-container class="correo">
+        <label>Email</label>
+        <input  type="email" ng-pattern="/^.+@.+\..+$/" required md-no-asterisk name="email" ng-model="vm.usuario.email" ng-disabled="true";>
+      </md-input-container>
+
+    </md-input-container> <br>
+  </div>
+
+  </form>
 </section>

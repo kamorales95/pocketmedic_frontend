@@ -13,7 +13,7 @@
   right: 0;
   text-align: center;
   top: 0;
-  z-index: 0;
+  z-index: 2;
 }
 .MainMenu-item {
   display: inline-block;

@@ -1,182 +1,322 @@
-.SectionPerfil {
-  background: #607d8b;
+/*.SectionPerfil
+  background #607D8B
+  text-align center
+  padding  12em
+
+.Perfil
+  padding-top 3em
+  background-color snow
+
+.FormPerfil
+  background #EEEEEE
+  display flex
+  justify-content space-between
+  padding 6em
+  margin auto
+  border-radius 0.1em
+  box-shadow 0.1em 0.1em  #555
+  max-width 84em
+  width 90%
+
+
+.infoPersonal
+  color
+  text-align left
+  width 40%
+  display inline-block
+  margin-left 10em
+  font-size 1.3em
+  margin-top 1em
+
+.FormPerfil-img
+  float left
+  width 10em
+  display block
+  margin -4em
+
+.messeger
+  width 12em
+  margin-top 5em
+  margin-left 8em
+
+
+.textPer
+  border-bottom 2px solid #1E0C53
+  padding-bottom 2em
+  color black
+  text-align center
+
+.Informpersonal
+  margin-bottom 2em
+  border-bottom  2px
+  display block
+  color black
+
+.Infocontacto
+  margin-bottom 2em
+  border-bottom 2px solid black
+  display:block
+
+
+.buttom1
+  background #01579B
+  margin -1
+  color white
+  vertical-align top
+
+.mapaContainer
+  text-align center
+
+.mapa
+  display inline-block
+  background-size cover
+
+.name
+  color black
+
+.especial
+  color black
+
+.tel
+  color black
+  display: block
+
+.direc
+  color black
+  display: block
+
+.correo
+  color red
+  display: block*/
+/** ------------------------------------------------ de aquí para abajo lo que se estaba usando de responsive ------------------------------------------ **/
+/*@media screen and (min-width:880px) and (max-width: 996px)
+  .messeger
+    margin-left 60px
+  .infoPersonal
+    margin-left 8em*/
+/** @media screen and (max-width: 879px)
+  .FormPerfil-img
+    /**width 100%**/
+/**text-align center
+  .messeger
+    display inline-block
+    width 12em
+    /**margin 0**/
+/**.usuarioPerfil
+    margin-top 15em
+  .infoPersonal
+    margin-left 0 **/
+/** ------------------------------------------------ de aquí para arriba lo que se estaba usando de responsive ------------------------------------------ **/
+/*@media screen and (max-width: 1045px)
+  .messeger
+    margin-left 5em
+  .infoPersonal
+    font-size 1em
+
+/*@media screen and (max-width: 920px)
+  .FormPerfil-img
+    width 400px
+
+  .infoPersonal
+    margin 0
+    margin-top 6em
+
+  .SectionPerfil
+    padding-left 100px
+    padding-right 100px
+
+  .messeger
+    margin-left 14em
+
+  .tel,
+  .direc,
+  .correo
+    margin-left 10.5em
+    width 14em
+@media screen and (max-width: 815px)
+  .SectionPerfil
+    padding-left 90px
+    padding-right 90px
+
+@media screen and (max-width: 790px)
+  .FormPerfil-img
+    width 350px
+
+@media screen and (max-width: 770px)
+  .messeger
+    margin-left: 10em
+
+  .tel,
+  .direc,
+  .correo
+    margin-left 7.5em
+
+@media screen and (max-width: 700px)
+  .FormPerfil-img
+    width 300px
+
+  .tel,
+  .direc,
+  .correo
+    margin-left 5.5em
+
+@media screen and (max-width: 650px)
+  .FormPerfil-img
+    width 270px
+
+@media screen and (max-width: 630px)
+  .FormPerfil-img
+    width 260px
+
+  .messeger
+    width 100px
+    margin-left 5em
+
+  .buttom1
+    width 200px
+
+@media screen and (max-width: 580px)
+  .SectionPerfil
+    padding-left 60px
+    padding-right 60px
+
+  .messeger
+    margin-left 3em
+
+@media screen and (max-width: 540px)
+  .messeger
+    margin-left
+
+@media screen and (max-width: 500px)
+  .messeger
+    margin-left 2em
+
+  .SectionPerfil
+    padding-left 60px
+    padding-right 60px
+
+  .FormPerfil
+    padding 70px
+
+  .textPer
+    font-size 1.5em
+
+@media screen and (max-width: 450px)
+  .messeger
+    margin-left 1em
+
+  .FormPerfil
+    padding 60px
+
+  .SectionPerfil
+    padding-left 60px
+    padding-right 60px
+
+  .buttom1
+    width 150px
+
+@media screen and (max-width: 425px)
+  .messeger
+    margin-left 3em
+    width 90px
+
+  .FormPerfil-img
+    width 230px
+
+  .buttom1
+    width 140px
+    margin-left -1.5em
+
+  .textPer
+    font-size 1em
+
+  .name,
+  .especial
+    margin-left -4em
+@media screen and (max-width: 421px)
+  .messeger
+    margin-left 3em
+  .tel
+    padding-left 3em
+
+@media screen and (max-width: 400px)
+  .tel,
+  .direc,
+  .correo
+    margin-left -2em
+    width 9em
+
+  .messeger
+    margin-left 2em
+
+@media screen and (max-width: 321px)
+  .messeger
+    margin-left -4em
+
+@media screen and (max-width: 541px)
+  .messeger
+    margin-left 4em
+  .tel,
+  .direc,
+  .correo
+    margin-left 3em
+    width 4em
+
+@media screen and (max-width: 320px)
+  .messeger
+    margin 0
+  .tel,
+  .direc,
+  .correo
+    margin-left 0
+    width 3em*/
+.Profile-container {
+  background: #64b5f6;
+  padding-top: 6em;
+  padding-bottom: 3em;
   text-align: center;
-  padding: 12em;
 }
-.Perfil {
-  padding-top: 3em;
-  background-color: #fffafa;
-}
-.FormPerfil {
-  background: #eee;
-  display: flex;
-  justify-content: space-between;
-  padding: 6em;
-  margin: auto;
-  border-radius: 0.1em;
-  box-shadow: 0.1em 0.1em #555;
-  max-width: 84em;
-  width: 90%;
+.ProfileForm {
+  background: #fffafa;
 }
 .infoPersonal {
-color
-  text-align: left;
-  width: 40%;
+  width: 100%;
   display: inline-block;
-  margin-left: 10em;
-  font-size: 1.3em;
-  margin-top: 1em;
-}
-.FormPerfil-img {
-  float: left;
-  width: 10em;
-  display: block;
-  margin: -4em;
-}
-.messeger {
-  width: 12em;
-  margin-top: 5em;
-  margin-left: 8em;
-}
-.textPer {
-  border-bottom: 2px solid #1e0c53;
-  padding-bottom: 2em;
-  color: #000;
-  text-align: center;
-}
-.Informpersonal {
-  margin-bottom: 2em;
-  border-bottom: 2px;
-  display: block;
-  color: #000;
 }
 .Infocontacto {
-  margin-bottom: 2em;
-  border-bottom: 2px solid #000;
-  display: block;
-}
-.buttom1 {
-  background: #01579b;
-  margin: -1;
-  color: #fff;
-  vertical-align: top;
-}
-.mapaContainer {
-  text-align: center;
-}
-.mapa {
+  width: 100%;
   display: inline-block;
-  background-size: cover;
 }
-@media screen and (max-width: 1045px) {
-  .messeger {
-    margin-left: 5em;
-  }
-  .infoPersonal {
-    font-size: 1em;
-  }
+.name {
+  width: 65%;
 }
-@media screen and (max-width: 920px) {
-  .FormPerfil-img {
-    width: 400px;
-  }
-  .infoPersonal {
-    margin: 0;
-    margin-top: 6em;
-  }
-  .SectionPerfil {
-    padding-left: 100px;
-    padding-right: 100px;
-  }
-  .messeger {
-    margin-left: 8em;
-  }
+.especial {
+  width: 65%;
 }
-@media screen and (max-width: 815px) {
-  .SectionPerfil {
-    padding-left: 90px;
-    padding-right: 90px;
+.tel {
+  width: 65%;
+}
+.direc {
+  width: 65%;
+}
+.correo {
+  width: 65%;
+}
+@media screen and (min-width: 965px) {
+  .ProfileForm {
+    margin-top: 3em;
+    padding: 2em 3em 1em 3em;
+    width: 65em;
+    display: inline-block;
+    border: 1px solid;
   }
 }
-@media screen and (max-width: 790px) {
-  .FormPerfil-img {
-    width: 350px;
-  }
-}
-@media screen and (max-width: 700px) {
-  .FormPerfil-img {
-    width: 300px;
-  }
-}
-@media screen and (max-width: 650px) {
-  .FormPerfil-img {
-    width: 270px;
-  }
-}
-@media screen and (max-width: 630px) {
-  .FormPerfil-img {
-    width: 260px;
-  }
-  .messeger {
-    width: 100px;
-    margin-left: 5em;
-  }
-  .buttom1 {
-    width: 200px;
-  }
-}
-@media screen and (max-width: 580px) {
-  .SectionPerfil {
-    padding-left: 60px;
-    padding-right: 60px;
-  }
-  .messeger {
-    margin-left: 3em;
-  }
-}
-@media screen and (max-width: 500px) {
-  .messeger {
-    margin-left: 2em;
-  }
-  .SectionPerfil {
-    padding-left: 60px;
-    padding-right: 60px;
-  }
-  .FormPerfil {
-    padding: 70px;
-  }
-  .textPer {
-    font-size: 1.5em;
-  }
-}
-@media screen and (max-width: 450px) {
-  .messeger {
+@media screen and (max-width: 964px) {
+  .Profile-container {
     margin-left: 1em;
+    margin-right: 1em;
   }
-  .FormPerfil {
-    padding: 60px;
-  }
-  .SectionPerfil {
-    padding-left: 60px;
-    padding-right: 60px;
-  }
-  .buttom1 {
-    width: 150px;
-  }
-}
-@media screen and (max-width: 425px) {
-  .messeger {
-    margin-left: -1em;
-    width: 90px;
-  }
-  .FormPerfil-img {
-    width: 230px;
-  }
-  .buttom1 {
-    width: 140px;
-    margin-left: -1.5em;
-  }
-  .textPer {
-    font-size: 1em;
+  .ProfileForm {
+    border: 1px solid;
   }
 }

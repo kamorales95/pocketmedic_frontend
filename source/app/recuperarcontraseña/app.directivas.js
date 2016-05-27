@@ -9,7 +9,9 @@
         return {
             scope: {},
             restrict: 'EA',
-            templateUrl: 'app/recuperarcontraseña/recuperarcontraseña.html'
+            templateUrl: 'app/recuperarcontraseña/recuperarcontraseña.html',
+            controller:'restablecercontra',
+            controllerAs:'vm'
         }
     }
 })();

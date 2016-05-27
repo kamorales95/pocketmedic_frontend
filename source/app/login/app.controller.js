@@ -13,6 +13,7 @@
     vm.logout = logout;
     vm.isAdmin = isAdmin;
     vm.isUser = isUser;
+    vm.isMedic = isMedic;
     vm.getIdCurrentUser = getIdCurrentUser;
 
 
@@ -20,7 +21,7 @@
     $auth.login(vm.user)
         .then(function(){
           vm.user = {};
-          $location.url('/perfil');
+          $location.url('/bienvenido');
           $mdToast.show(
             $mdToast.simple()
             .textContent('Sesion Iniciada...')
@@ -79,6 +80,15 @@
   function isUser() {
     if (isAuthenticated()){
       return $auth.getPayload().roles.indexOf('USER') !== -1;
+    }else{
+      return false;
+    }
+
+  }
+
+  function isMedic() {
+    if (isAuthenticated()){
+      return $auth.getPayload().roles.indexOf('MEDIC') !== -1;
     }else{
       return false;
     }
