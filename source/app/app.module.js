@@ -23,7 +23,9 @@
         'sidenavDemo1',
         'app.tituloscertificados',
         'app.recuperarcontraseña',
-        'app.nuevacontraseña'
+        'app.nuevacontraseña',
+        'app.email',
+        'app.bienvenido'
 
 
 

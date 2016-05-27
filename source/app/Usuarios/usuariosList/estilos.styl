@@ -1,23 +1,62 @@
-.tabla
+.ListUsers-Content
+  min-height calc(80vh)
+  background #64b5f6
+
+.tablaUsers
   background #eee
   text-align center
-  background-repeat no-repeat
-  background-size cover
-  background-position fixed
-  padding 8em
+  // background-repeat no-repeat
+  // background-size cover
+  // background-position fixed
+  // padding 8em
   box-shadow 0.1em 0.1em  #555
   border-radius 1em
-  width 90%
-  display inline-block
+  // width 90%
+  // display inline-block
+  padding-bottom 5em
 
-.SectionTab
+.SectionTabUsers
   background #64b5f6
   text-align center
-  background-image url('../../img/medicine_phixr.png')
-  background-repeat no-repeat
-  background-size cover
-  background-position fixed
-  padding 8em
+  // background-image url('../../img/medicine_phixr.png')
+  // background-repeat no-repeat
+  // background-size cover
+  // background-position fixed
+  padding 8em 2em 3em 2em
+
+.SectionTabUsers-table
+  margin-top 5.5em
 
 .Especilidad
   text-align center
+
+.SectionTab-table
+  margin-top 5.5em
+
+.td
+  color white
+
+@media screen and (max-width: 800px)
+  .SectionTabUsers
+    &-table, &-table thead, &-table tbody, &-table th, &-table td, &-table tr
+      display block
+    &-table thead tr
+      position absolute
+      top -9999px
+      left -9999px
+    &-table tr
+      border 1px solid #ccc
+    &-table td
+      border none
+      position relative
+    &-table td:before
+      position relative
+      font-weight bold
+    &-table td:nth-of-type(1):before
+      content "Foto: "
+    &-table td:nth-of-type(2):before
+      content "Nombres: "
+    &-table td:nth-of-type(3):before
+      content "Apellidos: "
+    &-table td:nth-of-type(4):before
+      content "Consulta: "

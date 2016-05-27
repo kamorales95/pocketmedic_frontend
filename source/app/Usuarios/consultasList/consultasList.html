@@ -1,12 +1,12 @@
 <section class="SectionTab">
   <div class="tabla" data-example-id="simple-table">
-    <h1 style="padding-bottom:.5em;border-bottom:2px solid black;">Consultas</h1><br>
-    <table class="table">
-      <thead style="background:white;">
+    <h1 style="padding-bottom:.5em;border-bottom:2px solid black; display:inline-block; font-size:20px">Consultas</h1><br>
+    <table class="table table-bordered">
+      <thead style="background:black;">
         <!-- <tr><th>Foto</th><th>Nombre</th><th>Apellidos</th></tr> -->
-        <th><font><font>Medico</font></th>
-        <th><font><font>Fecha</font></th>
-        <th><font><font>Descripción</font></th>
+        <th><font style="color:white;"><font>Medico</font></th>
+        <th><font style="color:white;"><font>Fecha</font></th>
+        <th><font style="color:white;"><font>Descripción</font></th>
       </thead>
       <tbody ng-repeat="consulta in vm.consultas" style="">
         <!-- <tr><th> scope="row"</th>1</tr> -->

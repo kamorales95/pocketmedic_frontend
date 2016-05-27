@@ -24,7 +24,7 @@
             </button>
             <ul class="dropdown-menu">
               <li><a href="#/perfil/{{vm.getIdCurrentUser()}}">Mi Perfil</a></li>
-              <li><a href="#/usuariosList">Médicos</a></li>
+              <li><a href="#/usuariosList" ng-show="!vm.isMedic()">Médicos</a></li>
               <li><a href="#/consultasList">Lista de consultas</a></li>
               <li><a href="#/configuser/{{vm.getIdCurrentUser()}}">Configuración</a></li>
               <li role="separator" class="divider"></li>

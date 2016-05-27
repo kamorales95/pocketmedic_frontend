@@ -16,7 +16,7 @@
 
         $stateProvider
             .state('nuevacontraseña', {
-                url: '/nuevacontraseña',
+                url: '/nuevacontraseña/:idUsuario/:Codigo',
 
                         template: '<nuevacontraseña/>'
 

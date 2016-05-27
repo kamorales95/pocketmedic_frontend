@@ -1,4 +1,4 @@
-.SectionPerfil
+/*.SectionPerfil
   background #607D8B
   text-align center
   padding  12em
@@ -71,13 +71,54 @@
   display inline-block
   background-size cover
 
-@media screen and (max-width: 1045px)
+.name
+  color black
+
+.especial
+  color black
+
+.tel
+  color black
+  display: block
+
+.direc
+  color black
+  display: block
+
+.correo
+  color red
+  display: block*/
+
+/** ------------------------------------------------ de aquí para abajo lo que se estaba usando de responsive ------------------------------------------ **/
+
+/*@media screen and (min-width:880px) and (max-width: 996px)
+  .messeger
+    margin-left 60px
+  .infoPersonal
+    margin-left 8em*/
+
+/** @media screen and (max-width: 879px)
+  .FormPerfil-img
+    /**width 100%**/
+    /**text-align center
+  .messeger
+    display inline-block
+    width 12em
+    /**margin 0**/
+  /**.usuarioPerfil
+    margin-top 15em
+  .infoPersonal
+    margin-left 0 **/
+
+/** ------------------------------------------------ de aquí para arriba lo que se estaba usando de responsive ------------------------------------------ **/
+
+/*@media screen and (max-width: 1045px)
   .messeger
     margin-left 5em
   .infoPersonal
     font-size 1em
 
-@media screen and (max-width: 920px)
+/*@media screen and (max-width: 920px)
   .FormPerfil-img
     width 400px
 
@@ -90,8 +131,13 @@
     padding-right 100px
 
   .messeger
-    margin-left 8em
+    margin-left 14em
 
+  .tel,
+  .direc,
+  .correo
+    margin-left 10.5em
+    width 14em
 @media screen and (max-width: 815px)
   .SectionPerfil
     padding-left 90px
@@ -101,9 +147,23 @@
   .FormPerfil-img
     width 350px
 
+@media screen and (max-width: 770px)
+  .messeger
+    margin-left: 10em
+
+  .tel,
+  .direc,
+  .correo
+    margin-left 7.5em
+
 @media screen and (max-width: 700px)
   .FormPerfil-img
     width 300px
+
+  .tel,
+  .direc,
+  .correo
+    margin-left 5.5em
 
 @media screen and (max-width: 650px)
   .FormPerfil-img
@@ -127,6 +187,10 @@
 
   .messeger
     margin-left 3em
+
+@media screen and (max-width: 540px)
+  .messeger
+    margin-left
 
 @media screen and (max-width: 500px)
   .messeger
@@ -155,9 +219,10 @@
 
   .buttom1
     width 150px
+
 @media screen and (max-width: 425px)
   .messeger
-    margin-left -1em
+    margin-left 3em
     width 90px
 
   .FormPerfil-img
@@ -169,3 +234,96 @@
 
   .textPer
     font-size 1em
+
+  .name,
+  .especial
+    margin-left -4em
+@media screen and (max-width: 421px)
+  .messeger
+    margin-left 3em
+  .tel
+    padding-left 3em
+
+@media screen and (max-width: 400px)
+  .tel,
+  .direc,
+  .correo
+    margin-left -2em
+    width 9em
+
+  .messeger
+    margin-left 2em
+
+@media screen and (max-width: 321px)
+  .messeger
+    margin-left -4em
+
+@media screen and (max-width: 541px)
+  .messeger
+    margin-left 4em
+  .tel,
+  .direc,
+  .correo
+    margin-left 3em
+    width 4em
+
+@media screen and (max-width: 320px)
+  .messeger
+    margin 0
+  .tel,
+  .direc,
+  .correo
+    margin-left 0
+    width 3em*/
+
+
+.Profile-container
+  background #64b5f6
+  padding-top 6em
+  padding-bottom 3em
+  text-align center
+
+.ProfileForm
+  background snow
+
+.infoPersonal
+  width 100%
+  display inline-block
+
+
+.Infocontacto
+  width 100%
+  display inline-block
+
+
+.name
+  width 65%
+
+
+.especial
+  width 65%
+  
+
+.tel
+  width 65%
+
+.direc
+  width 65%
+
+.correo
+  width 65%
+
+@media screen and (min-width: 965px)
+  .ProfileForm
+    margin-top 3em
+    padding 2em 3em 1em 3em
+    width 65em
+    display inline-block
+    border 1px solid
+
+@media screen and (max-width: 964px)
+  .Profile-container
+    margin-left 1em
+    margin-right 1em
+  .ProfileForm
+    border 1px solid
