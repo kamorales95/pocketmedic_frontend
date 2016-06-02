@@ -1,6 +1,64 @@
+<<<<<<< HEAD
+
+=======
+<section class="SectionPerfil">
+  <article class="FormPerfil" style="display:block;">
+
+      <h1 class="textPer"> Bienvenido   </h1>
+
+       <figure class="FormPerfil-img"  >
+         <img class="messeger" src="../../img/messenger.jpg" />
+       </figure>
 
 
-<section class="Profile-container">
+  <form class="usuarioPerfil">
+
+    <div class="infoPersonal">
+
+    <md-input-container class="name">
+    <label>Nombre</label>
+      <input required md-no-asterisk name="nombres" name="apellidos" ng-model="vm.usuario.nombres + vm.usuario.apellidos"  ng-disabled="true";>
+
+     </md-input-container>
+     <md-input-container class="especial" >
+     <label>Especialidad</label>
+    <input required md-no-asterisk name="Especialidad"  ng-model="vm.titulosycertificados" ng-disabled="true ;">
+    </md-input-container>
+  </div> <br> <br>
+
+
+
+
+      <div>
+      <label  class="Infocontacto" > <p class="labeltext"> Información de contacto </p></label><br>
+
+  <md-input-container class="tel">
+    <label>Teléfono</label>
+    <input required md-no-asterisk name="telefono" ng-model="vm.usuario.telefono" ng-disabled="true";>
+  </md-input-container>
+
+
+
+      <md-input-container class="direc">
+        <label>Dirección</label>
+        <input required md-no-asterisk name="direccion" ng-model="vm.usuario.direccion" ng-disabled="true";>
+      </md-input-container>
+
+      <md-input-container class="correo">
+        <label>Email</label>
+        <input type="email" ng-pattern="/^.+@.+\..+$/" required md-no-asterisk name="email" ng-model="vm.usuario.email" ng-disabled="true";>
+      </md-input-container>
+
+    </md-input-container> <br>
+  </div>
+
+
+  </form>
+  </article>
+</section>
+>>>>>>> da1c4ed942fe201c3f3ea28b70647d71129e48c5
+
+<!-- <section class="Profile-container">
   <form class="ProfileForm">
     <div class="HeaderForm">
       <h1 class="text-center Profile-title">Bienvenido</h1>
@@ -51,4 +109,4 @@
   </div>
 
   </form>
-</section>
+</section> -->
