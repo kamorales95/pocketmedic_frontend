@@ -23,23 +23,41 @@
   border-bottom: 2px solid #e0e0e0;
   margin-bottom: 2.5em;
   margin-top: 1em;
+  width: 78%;
+}
+.col-xs-12 {
+  left: 5em;
 }
 .portafoliocontainer-Title {
   font-size: 1.8em;
+  width: 7em;
 }
 .text {
   color: #000;
   width: 100%;
   font-size: 17px;
 }
-.col-xs-12 {
-  left: 6em;
-}
-@media screen and (max-width: 1280px) {
+@media screen and (min-width: 434px) {
   .col-xs-12 {
-    width: 67%;
+    width: 70%;
+    right: 2.8em;
+    font-size: 0.8em;
+    text-align: center;
   }
   .portafoliocontainer-Title {
-    width: 120%;
+    width: 400%;
+  }
+  .portafoliocontainer {
+    right: 3.5em;
+    height: 30em;
+  }
+  .col-xs-12 {
+    left: 0;
+  }
+  .text {
+    width: 95%;
+  }
+  .sectionTitle {
+    right: 5em;
   }
 }

@@ -1,0 +1,28 @@
+#PEPA WEB
+El cliente de novedades de instructor, fue generado por Steven Bolivar Morales.
+
+No olvidarse que cada vez que agregue una nueva funcionalidad, debe comentar como el ejemplo siguiente:
+
+/**
+ * Autor: Steven Bolivar Morales.
+ * Email: sbolivar73@misena.edu.co
+ * Funcionalidad: FrontEnd CRUD para el componente novedades de instructor
+ */
+
+ De igual manera, este README sirve para relacionar el historial o modificaciones que se realiza a
+ cualquier archivo que esta dentro de esta carpeta.
+
+HISTORIAL TIPOS FORMACIÓN.
+
+-esta funcional el crud de novedades de instructor
+
+
+
+
+// cristian , miguel, gustavo 
+insntalar bower install pdfmake
+
+agregar estas dos rutas  en el index 
+
+<script src='bower_components/pdfmake/build/pdfmake.min.js'></script>
+<script src='bower_components/pdfmake/build/vfs_fonts.js'></script> 

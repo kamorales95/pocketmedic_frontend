@@ -85,7 +85,7 @@
                      md-min-length="1" md-floating-label="Ciudad"  required name="ciudadDomicilio" id="ciudad" style="margin:0;">
       <md-item-template style="margin:0;">
         <span md-highlight-text="vm.searchTextCiudades" md-highlight-flags="^i">
-          {{item.nombreCiudad}} - {{item.departamentos.nombreDepartamento}}</span>
+          {{item.nombreCiudad}} - {{item.departamento.nombreDepartamento}}</span>
       </md-item-template>
         <md-not-found style="margin:0;">
           La ciudad "{{vm.searchTextCiudades}}" no fue encontrada.

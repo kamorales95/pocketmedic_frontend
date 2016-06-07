@@ -8,6 +8,7 @@
         'ngMaterial',
         'ngMessages',
         'satellizer',
+        'ui.calendar',
         //'templates',
         'app.config',
         'app.inicio',
@@ -26,6 +27,7 @@
         'app.nuevacontraseña',
         'app.email',
         'app.bienvenido'
+        //'app.calendario'
 
 
 

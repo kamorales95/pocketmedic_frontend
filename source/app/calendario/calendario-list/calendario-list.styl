@@ -1,0 +1,72 @@
+.Calendar
+  box-shadow 5px 6px 10px -2px #000
+  background #f9f9f9
+  color #fc7323
+  border 1px solid #fc7323
+  border-radius 5px
+  &-tittle
+      padding: .5em
+      font-weight: bold;
+  &-AutoComplete
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 55em;
+    @media screen and (max-width: 500px)
+      flex-direction: column;
+      min-width: 25em
+
+//opacidad para los numeros del calendario de las fechas anteriores o posteriores.
+.fc-day-number.fc-other-month
+  opacity 0.5
+
+.fc-toolbar
+  color: #fff
+  font-weight: bold!important;
+  text-transform: uppercase;
+  margin-bottom: 0
+  background: #fc7323
+
+.fc-toolbar .fc-center h2
+  font-weight: bold
+  padding: .5em 0em
+
+/*
+.container .fc-view table
+  //width 99.9%!important
+*/
+
+
+md-input-container .md-input .ng-invalid .ng-dirty
+  border 1px solid  #fc7323!important
+
+.fc-button
+  background #ffffff!important
+//hover para los botones del calendario
+.fc-button:hover
+  background #ffb78e!important
+
+.fc-state-down, .fc-state-active
+  background #ffb78e!important
+//borde para las lineas internas del calendario
+.fc-unthemed th, .fc-unthemed td, .fc-unthemed thead, .fc-unthemed tbody, .fc-unthemed .fc-divider, .fc-unthemed .fc-row, .fc-unthemed .fc-popover
+  border-color #fc7323!important
+
+.AutoComplete
+  min-width: 20em
+  &-fichas
+    min-width: 10em
+  &-ambiente
+    min-width: 10em
+
+.container-footer
+  padding: 4em 1em 10em 1em
+
+@media screen and (max-width: 1200px)
+  .AutoComplete
+    min-width: 20em
+
+@media screen and (max-width: 1000px)
+  .AutoComplete
+    min-width: 15em

@@ -1,0 +1,69 @@
+<div class="container-footer">
+    <h2 class="title-h2">Centro De Biotecnologia Industrial</h2>
+    <article class="Calendar-AutoComplete">
+      <md-autocomplete ng-hide="(vm.ambienteFormacion != null || vm.usuario != null)" class="AutoComplete-fichas"
+  										 md-search-text="vm.searchTextCodigo"
+  										 md-items="item in vm.queryCodigoFicha(vm.searchTextCodigo)"
+  										 md-selected-item="vm.ficha"
+  										 md-item-text="item.codigoFicha"
+  										 md-selected-item-change="vm.selectedFichaChange(item.idFicha)"
+  										 md-min-length="4"
+  										 md-floating-label='Ficha No.'>
+        <md-item-template>
+          <span md-highlight-text="vm.searchTextCodigo.idFicha.idFicha" md-highlight-flags="^i">
+            {{item.codigoFicha}}
+          </span>
+        </md-item-template>
+        <md-not-found>
+          La Ficha "{{vm.searchTextCodigo}}" no fue encontrada.
+        </md-not-found>
+      </md-autocomplete>
+
+
+      <md-autocomplete ng-hide="(vm.ficha != null || vm.usuario != null)"  class="AutoComplete-ambiente"
+  										 md-search-text="vm.searchTextAmbiente"
+  										 md-items="item in vm.queryNombreFormacion(vm.searchTextAmbiente)"
+  										 md-selected-item="vm.ambienteFormacion"
+  										 md-item-text="item.nombreAmbienteFormacion"
+  										 md-selected-item-change="vm.selectedAmbienteChange(item.idAmbienteFormacion)"
+  										 md-min-length="2" md-floating-label='Nombre Ambiente No.'>
+
+        <md-item-template>
+          <span md-highlight-text="vm.searchTextAmbiente.idAmbienteFormacion.idAmbienteFormacion" md-highlight-flags="^i">
+            {{item.nombreAmbienteFormacion}}
+          </span>
+        </md-item-template>
+        <md-not-found>
+          El ambiente de formacion"{{vm.searchTextAmbiente}}" no fue encontrada.
+        </md-not-found>
+      </md-autocomplete>
+
+      <md-autocomplete ng-hide="(vm.ficha != null || vm.ambienteFormacion != null)" class="AutoComplete"
+  										 md-search-text="vm.searchTextUsuarios"
+  										 md-items="item in vm.queryNombreInstructor(vm.searchTextUsuarios)"
+  										 md-selected-item="vm.usuario"
+  										 md-item-text="item.nombre1 + ' ' + item.apellido1 + ' ' + item.apellido2"
+  										 md-selected-item-change="vm.selectedInstructorChange(item.idUsuario)"
+  										 md-min-length="3"
+  										 md-floating-label='Nombre Usuario No.'>
+        <md-item-template>
+          <span md-highlight-text="vm.searchTextAmbiente.idUsuario.idUsuario" md-highlight-flags="^i">
+            {{item.nombre1}}
+            {{item.nombre2}}
+            {{item.apellido1}}
+          </span>
+        </md-item-template>
+        <md-not-found>
+          El instructor "{{vm.searchTextUsuarios}}" no fue encontrada.
+        </md-not-found>
+      </md-autocomplete>
+    </article>
+    <div class="container">
+
+
+  <div class="Calendar" ui-calendar='vm.uiConfig.calendar' ng-model='vm.eventSources'></div>
+
+  <button ng-click="vm.openPdf()">Open Pdf</button>
+   
+
+</div>
