@@ -2,7 +2,7 @@
   margin-top 5em
   color #2271B3
   font-size 1.5em
-  height 37em
+  height 36em
   width 100%
   // background-image: url('../../img/can-stock-photo_csp23816549.jpg')
   // background-repeat no-repeat
@@ -28,15 +28,23 @@
   border-bottom: 2px solid #E0E0E0
   margin-bottom 2.5em
   margin-top 1em
-  width 78%
+  left 64px
+
+// .row
+//   display flex
+//   justify-content space-between
+//   margin auto
+//
 
 .col-xs-12
-  left 5em
+  width 75%
+
 
 
 .portafoliocontainer-Title
   font-size 1.8em
   width 7em
+
 
 .text
  color black
@@ -45,7 +53,16 @@
 
 
 
-@media screen and (min-width: 434px)
+
+@media screen and (max-width 721px)
+  .portafoliocontainer-Title
+    width 100%
+
+  .sectionTitle
+    width 70%
+
+
+@media screen and (max-width 438px)
   .col-xs-12
     width 70%
     right 2.8em
@@ -53,7 +70,7 @@
     text-align center
 
   .portafoliocontainer-Title
-    width 400%
+    width 100%
 
   .portafoliocontainer
     right 3.5em
@@ -64,6 +81,15 @@
 
   .text
     width 95%
+    margin 5px
 
   .sectionTitle
     right 5em
+    width 66%
+
+  .welcome
+    width 26em
+
+@media screen and (max-width 399)
+  .text
+    color red

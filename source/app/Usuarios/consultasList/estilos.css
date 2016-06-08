@@ -1,5 +1,5 @@
 .tabla {
-  background: #b3e5fc;
+  background: #eee;
   text-align: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -17,4 +17,12 @@
   background-size: cover;
   background-position: fixed;
   padding: 8em;
+  background: #64b5f6;
+}
+.title-consulta {
+  padding-bottom: 0.5em;
+  border-bottom: 2px solid #000;
+  display: inline-block;
+  font-size: 20px;
+  width: 100%;
 }
