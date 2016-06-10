@@ -73,7 +73,7 @@
 }
 .care1 {
   border-radius: 50%;
-  width: 310%;
+  width: 230%;
 }
 .Tittle {
   text-align: center;
@@ -110,9 +110,6 @@
   }
 }
 @media screen and (max-width: 751px) {
-  .Inicio-image {
-    background-image: url("../../img/enfocada.jpg");
-  }
   .HeaderAbout-Descripcion-p {
     font-size: 1.7em;
   }

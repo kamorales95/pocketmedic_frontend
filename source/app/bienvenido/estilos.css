@@ -47,7 +47,7 @@
 }
 @media screen and (max-width: 438px) {
   .col-xs-12 {
-    width: 70%;
+    width: 50%;
     right: 2.8em;
     font-size: 0.8em;
     text-align: center;
