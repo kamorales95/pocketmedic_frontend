@@ -10,7 +10,7 @@
             scope: {},
             restrict: 'EA',
             templateUrl: 'app/Usuarios/citasmedicas/citasmedicas.html',
-            controller: 'consultaCtrl',
+            //controller: 'consultaCtrl',
             controllerAs: 'vm'
         }
     }

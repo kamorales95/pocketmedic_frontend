@@ -2,7 +2,7 @@
   'use strict';
 
   angular.module('app.citamedica',[
-      'app.citacontroller',
+      //'app.citacontroller',
       'app.cita.services',
       'app.citamedica.directive',
       'app.citamedica.router'
