@@ -1,3 +1,49 @@
+/*Notificaciones icono*/
+.Notifi {
+  display: inline-block;
+  float: right;
+  margin-right: 1em;
+  margin-top: 0.3em;
+}
+#Notification {
+  float: right;
+  margin-top: 6px;
+}
+.iconoo-notification {
+  color: #2271b3;
+  background-color: #fff;
+  padding: 0.2em;
+  border-radius: 5px;
+}
+.icon-notification:hover {
+  background-color: #3aafcf;
+  transition: 0.4s;
+}
+.Notification {
+  right: 0;
+  z-index: 2;
+  display: block;
+  background-color: #f5f5f5;
+  padding-bottom: 3em;
+  padding-top: 2em;
+  position: absolute;
+  text-align: center;
+}
+.NotificationLabel {
+  border: none;
+  color: #000;
+  padding-left: 2em;
+  padding-right: 2em;
+  padding-top: 0.4em;
+  padding-bottom: 0.4em;
+  background-color: #f5f5f5;
+  display: block;
+  font-family: sans-serif;
+  font-weight: bold;
+  border-bottom: 2px;
+  z-index: 100;
+}
+/* Fin */
 .HeaderAbout-Descripcion,
 .HeaderAbout-Descripcion-slogang,
 .HeaderAbout-Descripcion-p {

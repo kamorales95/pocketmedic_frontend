@@ -4,7 +4,11 @@
       <h1 class="textPer"> Bienvenido   </h1>
 
        <figure class="FormPerfil-img"  >
-         <img class="messeger" src="../../img/messenger.jpg" />
+         <div>
+    <button class="boton"><label style="color:white;" for="foto-input">Subir Foto</label></button>
+  <input type="file" id="foto-input" on-read-img="vm.loadFoto($fileContent)">
+  </div>
+<img ng-if="vm.usuario.foto" ng-src="{{'data:image/png;base64,' + vm.usuario.foto}}" width="150px" height="150px"/>
        </figure>
 
 
