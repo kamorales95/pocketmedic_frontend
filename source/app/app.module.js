@@ -27,7 +27,6 @@
         'app.nuevacontraseña',
         'app.email',
         'app.bienvenido'
-        //'app.calendario'
 
 
 
