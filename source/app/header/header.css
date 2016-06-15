@@ -152,3 +152,17 @@ align-left
   font-size: 1.3em;
   color: #000;
 }
+.Options {
+  z-index: 1;
+  position: absolute;
+  display: inline-block;
+  display: none;
+  background: #fffafa;
+  margin-top: 5em;
+  margin-right: 0em;
+  padding: 0.5em 2em;
+  text-align: left;
+}
+.Options>li {
+  border-bottom: 1px solid #2271b3;
+}

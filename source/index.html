@@ -16,25 +16,25 @@
     <!-- endbower -->
     <!-- inject:css -->
     <link rel="stylesheet" href="/app/admin/admin.css">
-    <link rel="stylesheet" href="/app/ambiental/ambiental.css">
     <link rel="stylesheet" href="/app/bienvenido/estilos.css">
     <link rel="stylesheet" href="/app/configuracion/configuracion.css">
     <link rel="stylesheet" href="/app/footer/footer.css">
     <link rel="stylesheet" href="/app/header/estilos.css">
     <link rel="stylesheet" href="/app/header/header.css">
+    <link rel="stylesheet" href="/app/ambiental/ambiental.css">
     <link rel="stylesheet" href="/app/inicio/animations.css">
     <link rel="stylesheet" href="/app/inicio/inicio.css">
-    <link rel="stylesheet" href="/app/perfil/perfil.css">
-    <link rel="stylesheet" href="/app/login/estilos.css">
-    <link rel="stylesheet" href="/app/portafolio/portafolio.css">
     <link rel="stylesheet" href="/app/recuperarcontraseña/recuperarcontraseña.css">
+    <link rel="stylesheet" href="/app/login/estilos.css">
     <link rel="stylesheet" href="/app/registro/estilos.css">
+    <link rel="stylesheet" href="/app/portafolio/portafolio.css">
+    <link rel="stylesheet" href="/app/perfil/perfil.css">
+    <link rel="stylesheet" href="/app/calendario/calendario-list/calendario-list.css">
     <link rel="stylesheet" href="/app/Usuarios/consulta/consulta.css">
     <link rel="stylesheet" href="/app/Usuarios/consultasCreate/estilos.css">
     <link rel="stylesheet" href="/app/Usuarios/consultasList/estilos.css">
-    <link rel="stylesheet" href="/app/Usuarios/eliminarcuenta/estilos.css">
     <link rel="stylesheet" href="/app/Usuarios/usuariosList/estilos.css">
-    <link rel="stylesheet" href="/app/calendario/calendario-list/calendario-list.css">
+    <link rel="stylesheet" href="/app/Usuarios/eliminarcuenta/estilos.css">
     <link rel="stylesheet" href="/app/recuperarcontraseña/nuevacontraseña/nuevacontraseña.css">
     <!-- endinject -->
     <!-- endbuild -->
@@ -82,55 +82,47 @@
     <!-- inject:js -->
     <script src="/app/app.module.js"></script>
     <script src="/app/templates.js"></script>
-    <script src="/app/Usuarios/app.module.js"></script>
     <script src="/app/admin/app.controller.js"></script>
     <script src="/app/admin/app.directivas.js"></script>
     <script src="/app/admin/app.module.js"></script>
     <script src="/app/admin/app.route.js"></script>
     <script src="/app/admin/app.services.js"></script>
-    <script src="/app/ambiental/app.directivas.js"></script>
-    <script src="/app/ambiental/app.module.js"></script>
-    <script src="/app/ambiental/app.route.js"></script>
+    <script src="/app/calendario/app.module.js"></script>
+    <script src="/app/calendario/app.route.js"></script>
     <script src="/app/bienvenido/app.directive.js"></script>
     <script src="/app/bienvenido/app.module.js"></script>
     <script src="/app/bienvenido/app.route.js"></script>
-    <script src="/app/calendario/app.module.js"></script>
-    <script src="/app/calendario/app.route.js"></script>
-    <script src="/app/config/app.constantes.js"></script>
+    <script src="/app/Usuarios/app.module.js"></script>
+    <script src="/app/email/app.module.js"></script>
+    <script src="/app/email/app.services.js"></script>
     <script src="/app/configuracion/app.directive.js"></script>
     <script src="/app/configuracion/app.module.js"></script>
     <script src="/app/configuracion/app.route.js"></script>
-    <script src="/app/email/app.module.js"></script>
-    <script src="/app/email/app.services.js"></script>
     <script src="/app/footer/app.directivas.js"></script>
     <script src="/app/footer/app.module.js"></script>
     <script src="/app/header/app.controller.js"></script>
     <script src="/app/header/app.directive.js"></script>
     <script src="/app/header/app.module.js"></script>
     <script src="/app/header/app.router.js"></script>
+    <script src="/app/header/mostrardesplegable.js"></script>
     <script src="/app/header/notificacion.js"></script>
     <script src="/app/header/showpanels.js"></script>
+    <script src="/app/ambiental/app.directivas.js"></script>
+    <script src="/app/ambiental/app.module.js"></script>
+    <script src="/app/ambiental/app.route.js"></script>
     <script src="/app/inicio/animation.js"></script>
     <script src="/app/inicio/app.controller.js"></script>
     <script src="/app/inicio/app.directivas.js"></script>
     <script src="/app/inicio/app.module.js"></script>
     <script src="/app/inicio/app.route.js"></script>
-    <script src="/app/perfil/app.controller.js"></script>
-    <script src="/app/perfil/app.directive.js"></script>
-    <script src="/app/perfil/app.module.js"></script>
-    <script src="/app/perfil/app.route.js"></script>
-    <script src="/app/login/app.controller.js"></script>
-    <script src="/app/login/app.directive.js"></script>
-    <script src="/app/login/app.module.js"></script>
-    <script src="/app/login/app.router.js"></script>
-    <script src="/app/portafolio/app.directivas.js"></script>
-    <script src="/app/portafolio/app.module.js"></script>
-    <script src="/app/portafolio/app.route.js"></script>
-    <script src="/app/portafolio/despliege.js"></script>
     <script src="/app/recuperarcontraseña/app.controller.js"></script>
     <script src="/app/recuperarcontraseña/app.directivas.js"></script>
     <script src="/app/recuperarcontraseña/app.module.js"></script>
     <script src="/app/recuperarcontraseña/app.router.js"></script>
+    <script src="/app/login/app.controller.js"></script>
+    <script src="/app/login/app.directive.js"></script>
+    <script src="/app/login/app.module.js"></script>
+    <script src="/app/login/app.router.js"></script>
     <script src="/app/registro/app.controller.js"></script>
     <script src="/app/registro/app.directivas.js"></script>
     <script src="/app/registro/app.module.js"></script>
@@ -138,11 +130,17 @@
     <script src="/app/registro/app.services.js"></script>
     <script src="/app/tituloscertificados/app.module.js"></script>
     <script src="/app/tituloscertificados/app.services.js"></script>
-    <script src="/app/Usuarios/citasmedicas/app.controller.js"></script>
-    <script src="/app/Usuarios/citasmedicas/app.directive.js"></script>
-    <script src="/app/Usuarios/citasmedicas/app.module.js"></script>
-    <script src="/app/Usuarios/citasmedicas/app.route.js"></script>
-    <script src="/app/Usuarios/citasmedicas/app.service.js"></script>
+    <script src="/app/portafolio/app.directivas.js"></script>
+    <script src="/app/portafolio/app.module.js"></script>
+    <script src="/app/portafolio/app.route.js"></script>
+    <script src="/app/portafolio/despliege.js"></script>
+    <script src="/app/perfil/app.controller.js"></script>
+    <script src="/app/perfil/app.directive.js"></script>
+    <script src="/app/perfil/app.module.js"></script>
+    <script src="/app/perfil/app.route.js"></script>
+    <script src="/app/config/app.constantes.js"></script>
+    <script src="/app/calendario/calendario-list/calendario-list.controller.js"></script>
+    <script src="/app/calendario/calendario-list/calendario-list.directive.js"></script>
     <script src="/app/Usuarios/consulta/app.controller.js"></script>
     <script src="/app/Usuarios/consulta/app.directive.js"></script>
     <script src="/app/Usuarios/consulta/app.module.js"></script>
@@ -157,17 +155,20 @@
     <script src="/app/Usuarios/consultasList/app.module.js"></script>
     <script src="/app/Usuarios/consultasList/app.route.js"></script>
     <script src="/app/Usuarios/consultasList/app.services.js"></script>
-    <script src="/app/Usuarios/eliminarcuenta/app.controller.js"></script>
-    <script src="/app/Usuarios/eliminarcuenta/app.directive.js"></script>
-    <script src="/app/Usuarios/eliminarcuenta/app.module.js"></script>
-    <script src="/app/Usuarios/eliminarcuenta/app.route.js"></script>
     <script src="/app/Usuarios/usuariosList/app.controller.js"></script>
     <script src="/app/Usuarios/usuariosList/app.directive.js"></script>
     <script src="/app/Usuarios/usuariosList/app.module.js"></script>
     <script src="/app/Usuarios/usuariosList/app.route.js"></script>
     <script src="/app/Usuarios/usuariosList/app.services.js"></script>
-    <script src="/app/calendario/calendario-list/calendario-list.controller.js"></script>
-    <script src="/app/calendario/calendario-list/calendario-list.directive.js"></script>
+    <script src="/app/Usuarios/eliminarcuenta/app.controller.js"></script>
+    <script src="/app/Usuarios/eliminarcuenta/app.directive.js"></script>
+    <script src="/app/Usuarios/eliminarcuenta/app.module.js"></script>
+    <script src="/app/Usuarios/eliminarcuenta/app.route.js"></script>
+    <script src="/app/Usuarios/citasmedicas/app.controller.js"></script>
+    <script src="/app/Usuarios/citasmedicas/app.directive.js"></script>
+    <script src="/app/Usuarios/citasmedicas/app.module.js"></script>
+    <script src="/app/Usuarios/citasmedicas/app.route.js"></script>
+    <script src="/app/Usuarios/citasmedicas/app.service.js"></script>
     <script src="/app/recuperarcontraseña/nuevacontraseña/app.directivas.js"></script>
     <script src="/app/recuperarcontraseña/nuevacontraseña/app.module.js"></script>
     <script src="/app/recuperarcontraseña/nuevacontraseña/app.router.js"></script>
