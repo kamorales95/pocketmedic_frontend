@@ -2,8 +2,8 @@
 .Notifi {
   display: inline-block;
   float: right;
-  margin-right: 1em;
-  margin-top: 0.3em;
+  margin-right: 1.5em;
+  margin-top: 0.5em;
 }
 #Notification {
   float: right;
@@ -15,8 +15,7 @@
   padding: 0.2em;
   border-radius: 5px;
 }
-.icon-notification:hover {
-  background-color: #3aafcf;
+.iconoo-notification:hover {
   transition: 0.4s;
 }
 .Notification {
@@ -162,7 +161,5 @@ align-left
   margin-right: 0em;
   padding: 0.5em 2em;
   text-align: left;
-}
-.Options>li {
-  border-bottom: 1px solid #2271b3;
+  margin-left: 3em;
 }
