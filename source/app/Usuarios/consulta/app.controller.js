@@ -11,8 +11,8 @@
       // this.dateMax.setFullYear(this.dateMax.getFullYear() - 18);
 
       vm.consultas={usuario:{idUsuario: $stateParams.idUsuario}, medico:{idUsuario: $stateParams.idMedico}}
-      console.log('dfdf');
-      console.log(vm.consultas);
+      //console.log('dfdf');
+      //console.log(vm.consultas);
       vm.create = function() {
           Consultas.save(vm.consultas, function() {
             $location.path('/consultasList');
