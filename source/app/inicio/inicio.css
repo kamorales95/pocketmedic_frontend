@@ -16,6 +16,10 @@
   margin-left: 80px;
   margin-top: 1em;
 }
+.container {
+  display: inline-block;
+  margin-left: 5em;
+}
 .HeaderAbout-Descripcion-p {
   font-size: 2.1em;
   width: 40%;
@@ -100,6 +104,9 @@
     margin-left: 72px;
     margin-top: 1em;
   }
+  .care1 {
+    display: none;
+  }
 }
 @media screen and (max-width: 700px) {
   .HeaderAbout-Descripcion-p {
@@ -108,15 +115,24 @@
     margin-left: 2em;
     margin-top: 3.5em;
   }
+  .care1 {
+    display: none;
+  }
 }
 @media screen and (max-width: 751px) {
   .HeaderAbout-Descripcion-p {
     font-size: 1.7em;
+  }
+  .care1 {
+    display: none;
   }
 }
 @media screen and (max-width: 360px) {
   .HeaderAbout-Descripcion {
     font-size: 5em;
     margin-left: 40px;
+  }
+  .care1 {
+    display: none;
   }
 }

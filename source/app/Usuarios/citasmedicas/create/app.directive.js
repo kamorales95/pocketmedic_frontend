@@ -2,13 +2,13 @@
   'use strict';
 
   angular.module('app.citasmedicas.directiva',[
-  ]).directive('citacreate', citacreate);
+  ]).directive('citacalendario', citacalendario);
 
-  function citacreate(){
+  function citacalendario(){
     return{
       scope:{},
       restrict: 'EA',
-      templateUrl:'app/Usuarios/citasmedicas/create/create.html',
+      templateUrl:'app/Usuarios/citasmedicas/create/citacreate.html',
       controller: '',
       controllerAs: 'vm'
     };

@@ -1,23 +1,17 @@
-(function () {
-    'use strict';
+(function(){
+  'use strict';
 
-    angular.module('app.citamedica.router', [
+  angular.module('app.citamedica.route',[
 
-    ])
-        .config(configure);
+  ]).config(configure);
 
-    //Se inyecta los parametros
-    configure.$inject = ['$stateProvider', '$urlRouterProvider'];
-
-    //Se configura las rutas de la aplicación para modelo
-    function configure($stateProvider, $urlRouterProvider) {
-
-        $urlRouterProvider.otherwise('/');
-
-        $stateProvider
-            .state('citamedica', {
-                url: '/citamedica',
-                template: '<citamedica/>'
-            });
-    };
+  configure.$inject=['$stateProvider', '$urlRouterProvider'];
+  function configure($stateProvider, $urlRouterProvider) {
+      $urlRouterProvider.otherwise('/');
+      $stateProvider
+          .state('citamedica', {
+              url: '/citamedica/:idUsuario/:idMedico',
+              template: '<citamedica/>'
+          });
+  };
 })();
