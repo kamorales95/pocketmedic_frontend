@@ -8,7 +8,7 @@
     return{
       scope:{},
       restrict: 'EA',
-      templateUrl:'app/Usuarios/citasmedicas/cita.html',
+      templateUrl:'app/Usuarios/citasmedicas/create/citacreate.html',
       controller: '',
       controllerAs: 'vm'
     };
