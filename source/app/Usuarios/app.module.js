@@ -4,6 +4,7 @@
     angular.module('app.Usuarios',[
       'app.usuariosList',
       'app.consultasList',
-      'app.consulta'
+      'app.consulta',
+      'app.consultaadmin'
     ]);
 })();

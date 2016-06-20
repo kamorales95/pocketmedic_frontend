@@ -11,6 +11,28 @@
         </div>
       </md-input-container>
 
+      <md-autocomplete md-selected-item="vm.consultas.categoria"
+                       md-search-text="vm.searchTexttitulosycertificados"
+                       md-items="item in vm.titulos(vm.searchTexttitulosycertificados)"
+                       md-item-text="item.titulos"
+                       md-min-length="1"
+                       md-floating-label="Titulos"
+                       name="titulos"
+                      style="margin:0;">
+        <md-item-template style="margin:0;">
+          <span
+          md-highlight-text="vm.searchTexttitulosycertificados"
+          md-highlight-flags="^i">
+            {{item.titulos}}</span>
+        </md-item-template>
+          <md-not-found style="margin:0;">
+            el titulo "{{vm.searchTexttitulosycertificados}}" no fue encontrado.
+          </md-not-found>
+            <div ng-messages="RegisterForm.ciudadDomicilio.$error">
+              <div ng-message="required">Este campo es requerido.</div>
+            </div>
+      </md-autocomplete>
+
 
       <!--
       <div class="">

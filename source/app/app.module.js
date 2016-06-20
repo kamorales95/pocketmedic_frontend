@@ -26,7 +26,8 @@
         'app.recuperarcontraseña',
         'app.nuevacontraseña',
         'app.email',
-        'app.bienvenido'
+        'app.bienvenido',
+        'app.calendario'
 
 
 
