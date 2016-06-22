@@ -1,8 +1,7 @@
 (function () {
     'use strict';
 
-    angular.module('app.consulta.router', [
-
+    angular.module('app.citacreate.route', [
     ]).config(configure);
 
     //Se inyecta los parametros
@@ -14,9 +13,9 @@
         $urlRouterProvider.otherwise('/');
 
         $stateProvider
-            .state('consulta', {
-                url: '/consulta/:idUsuario/:idMedico',
-                template: '<consulta/>'
+            .state('citacreate', {
+                url: '/citacreate/:idUsuario/:idMedico',
+                template: '<citacreate/>'
             });
     };
 })();

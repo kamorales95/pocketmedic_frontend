@@ -18,17 +18,6 @@
             .state('consultasCreate', {
                 url: '/consultasCreate',
                 template: '<consultas-create/>'
-                /*views: {
-                    'registro': {
-                        template: '<registro/>'
-                    },
-                    'piepagina': {
-                        template: '<piepagina/>'
-                    },
-                    'encabezado': {
-                        template: '<encabezado/>'
-                    }
-                }*/
             });
     };
 })();

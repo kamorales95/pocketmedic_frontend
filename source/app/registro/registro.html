@@ -81,7 +81,7 @@
     </md-input-container>
     <md-autocomplete md-selected-item="vm.usuario.ciudades" md-search-text="vm.searchTextCiudades"
                      md-items="item in vm.queryCiudades(vm.searchTextCiudades)"
-                     md-item-text="item.nombreCiudad + ' - ' + item.departamentos.nombreDepartamento"
+                     md-item-text="item.nombreCiudad + ' - ' + item.departamento.nombreDepartamento"
                      md-min-length="1" md-floating-label="Ciudad"  required name="ciudadDomicilio" id="ciudad" style="margin:0;">
       <md-item-template style="margin:0;">
         <span md-highlight-text="vm.searchTextCiudades" md-highlight-flags="^i">

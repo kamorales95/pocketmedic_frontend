@@ -5,6 +5,7 @@
       'app.usuariosList',
       'app.consultasList',
       'app.consulta',
-      'app.consultaadmin'
+      'app.consultaadmin',
+      'app.citacalendario'
     ]);
 })();

@@ -17,6 +17,4 @@
       $authProvider.tokenName = 'token';
       $authProvider.tokenPrefix = 'Portafolio';
     }
-
-
 })();

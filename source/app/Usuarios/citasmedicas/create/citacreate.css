@@ -1,0 +1,46 @@
+.Sectionconsulta {
+  text-align: center;
+/*background-image url('../../img/medicine_phixr.png')*/
+  background-color: #bbdefb;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: fixed;
+  padding: 10em;
+}
+.FormConsulta {
+  background-color: #fffafa;
+  display: inline-block;
+  padding: 2em;
+  border-radius: 0.7em;
+  box-shadow: 0.4em 0.4em #90caf9;
+  width: 50em;
+/*background-image url('../../img/medicine_phixr.png')*/
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: Snow;
+  text-align: center;
+}
+.FormConsulta-input {
+  margin-bottom: 1em;
+  border-radius: 1em;
+}
+.FormConsulta-tittle {
+  color: #000;
+  padding-bottom: 0.5em;
+  border-bottom: 2px solid #448aff;
+  margin-bottom: 1em;
+}
+@media screen and (max-width: 349px) {
+  .FormConsulta {
+    padding: 1em;
+    width: 24em;
+    margin-left: -106px;
+    margin-top: 45px;
+  }
+  .FormConsulta-title {
+    margin-bottom: 1em;
+    border-radius: 1em;
+    color: #000;
+  }
+}

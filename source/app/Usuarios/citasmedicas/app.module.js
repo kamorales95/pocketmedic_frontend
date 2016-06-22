@@ -1,8 +1,7 @@
 (function() {
    'use strict';
 
-   angular.module('app.calendario',[
-       'app.citasmedicas.directiva',
-       'app.citamedica.route'
+   angular.module('app.citacalendario',[
+       'app.citacreate'
    ]);
 })();
