@@ -9,7 +9,7 @@
           scope: {},
           templateUrl: 'app/Usuarios/consultaadmin/consultaadmin.html',
           restrict: 'EA',
-          controller: '',
+          controller: 'consultaadminCtrl',
           controllerAs: 'vm'
       }
   }

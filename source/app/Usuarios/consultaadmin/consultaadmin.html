@@ -1,22 +1,13 @@
-<md-subheader class="md-no-sticky">Clickable Items with Secondary Controls</md-subheader>
-  <md-list-item ng-click="navigateTo(setting.extraScreen, $event)" ng-repeat="setting in settings">
-    <md-icon md-svg-icon="{{setting.icon}}"></md-icon>
-    <p> {{ setting.name }} </p>
-    <md-switch class="md-secondary" ng-model="setting.enabled"></md-switch>
-  </md-list-item>
-  <md-list-item ng-click="navigateTo('data usage', $event)">
-    <md-icon md-svg-icon="cached"></md-icon>
-    <p>Data Usage</p>
-  </md-list-item>
-<div>
-  <md-subheader class="md-no-sticky">Clickable Items with Secondary Controls</md-subheader>
-    <md-list-item ng-click="navigateTo(setting.extraScreen, $event)" ng-repeat="setting in settings">
-      <md-icon md-svg-icon="{{setting.icon}}"></md-icon>
-      <p> {{ setting.name }} </p>
-      <md-switch class="md-secondary" ng-model="setting.enabled"></md-switch>
+<div class="div-consulta">
+
+  <div id="v">
+    <md-divider></md-divider>
+    <md-subheader class="md-no-sticky">Consultas Creadas</md-subheader>
+    <md-divider></md-divider>
+    <md-list-item ng-repeat="consulta in vm.consultas" class="noright">
+      <md-icon class="fa fa-question-circle-o icono"></md-icon>
+      <p>{{consulta.descripcion}}</p>
     </md-list-item>
-  <md-list-item ng-click="navigateTo('data usage', $event)">
-      <md-icon md-svg-icon="cached"></md-icon>
-      <p>Data Usage</p>
-  </md-list-item>
+  </div>
+
 </div>

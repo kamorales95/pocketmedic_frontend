@@ -3,8 +3,7 @@
 
   angular.module('app.consultasList.services',[
 
-  ])
-  .factory('Consultas', Consultas);
+  ]).factory('Consultas', Consultas);
 
     Consultas.$inject=['$resource','BASEURL'];
     function Consultas($resource, BASEURL) {
@@ -12,17 +11,16 @@
         { idConsultas: '@idConsultas' },
         {
           'update': {method: 'PUT'},
-          findUsuarioByIdRol: {
-            url: BASEURL + 'consultas/rol/:idRol',
+          findByUsuario:{
+            url: BASEURL + 'consultas/usuario/:idUsuario',
             method: 'GET',
             isArray: true,
             params: {
-              idRol: '@idRol'
+              idUsuario: '@idUsuario'
             }
           }
-        }
-
-    )}
+        });
+      }
 
 
 })();

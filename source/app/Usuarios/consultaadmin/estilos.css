@@ -1,0 +1,32 @@
+.div-consulta{
+  text-align: center;
+  /*background-image: url("../../img/medicine_phixr.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: fixed;*/
+  padding: 8em;
+}
+
+#v{
+  background-color: #64B5F6;
+  display: inline-block;
+  padding: 2em;
+  border-radius: 0.5em;
+  box-shadow: 0.1em 0.1em #555;
+  width: 90%;
+/*background-image url('../../img/medicine_phixr.png')*/
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: black;
+  text-align: center;
+}
+
+.md-no-sticky{
+  background-color: #BBDEFB;
+  font-size: 2em;
+}
+
+.icono{
+  font-size: 1.5em;
+}
