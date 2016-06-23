@@ -3,6 +3,8 @@
 
     angular.module('app.consultas', [
         'app.consulta-create',
+        'app.consultasList',
+        'app.consultaadmin',
         'app.consultas.services'
     ]);
 

@@ -7,7 +7,7 @@
   function consultaadmin() {
       return {
           scope: {},
-          templateUrl: 'app/Usuarios/consultaadmin/consultaadmin.html',
+          templateUrl: 'app/consultas/consultaadmin/consultaadmin.html',
           restrict: 'EA',
           controller: 'consultaadminCtrl',
           controllerAs: 'vm'

@@ -10,7 +10,7 @@
       this.dateMax = new Date();
       vm.titulos=queryTitulosYCertificados;
       // this.dateMax.setFullYear(this.dateMax.getFullYear() - 18);
-     vm.consultas={idUsuario:{idUsuario: $stateParams.idUsuario}}
+     //vm.consultas={idUsuario:{idUsuario: $stateParams.idUsuario}}
       console.log('dfdf');
       console.log(vm.consultas);
       if(vm.tituloscertificados!=null){

@@ -9,6 +9,8 @@
 
     var vm = this;
 
+    vm.consultas = Consultas.query();
+
     //vm.consultas = Consultas.query();
       console.log('Hola Que Hace');
        //vm.consultas=Consultas.findByUsuario({idUsuario: $stateParams.idUsuario});

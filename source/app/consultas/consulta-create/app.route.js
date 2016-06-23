@@ -15,7 +15,7 @@
 
         $stateProvider
             .state('consulta', {
-                url: '/consulta-create/:idUsuario',
+                url: '/consulta-create',
                 template: '<consulta/>'
             });
     };

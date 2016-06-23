@@ -8,7 +8,7 @@
     function consultasList() {
         return {
             scope: {},
-            templateUrl: 'app/Usuarios/consultasList/consultasList.html',
+            templateUrl: 'app/consultas/consultasList/consultasList.html',
             restrict: 'EA',
             controller: 'consultasListCtrl',
             controllerAs: 'vm'
