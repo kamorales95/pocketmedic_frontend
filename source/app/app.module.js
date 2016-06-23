@@ -27,7 +27,8 @@
         'app.nuevacontraseña',
         'app.email',
         'app.bienvenido',
-        'app.calendario'
+        'app.calendario',
+        'app.consultas'
 
 
 

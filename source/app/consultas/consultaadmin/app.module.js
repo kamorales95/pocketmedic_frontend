@@ -2,8 +2,8 @@
   'use strict';
 
   angular.module('app.consultaadmin',[
-    'app.consultaadmin.cotroller',
-    'app.consultadamin.directive',
+    'app.consultaadmin.controller',
+    'app.consultaadmin.directive',
     'app.consultaadmin.route'
   ])
 

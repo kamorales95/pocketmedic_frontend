@@ -1,7 +1,7 @@
 (function (){
     'use strict';
 
-    angular.module('app.consulta.controller', [
+    angular.module('app.consulta-create.controller', [
     ]).controller('consultaCtrl', consultaCtrl);
 
     consultaCtrl.$inject=['$location', '$mdToast', 'Consultas', '$stateParams', 'TitulosYCertificados']

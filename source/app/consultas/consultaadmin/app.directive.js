@@ -1,10 +1,10 @@
 (function(){
   'use strcit';
 
-  angular.module('app.consultadamin.directive',[
-  ]).directive('consultadamin', consultadamin);
+  angular.module('app.consultaadmin.directive',[
+  ]).directive('consultaadmin', consultaadmin);
 
-  function consultadamin() {
+  function consultaadmin() {
       return {
           scope: {},
           templateUrl: 'app/Usuarios/consultaadmin/consultaadmin.html',

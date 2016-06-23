@@ -1,7 +1,7 @@
 (function(){
   'use strict';
 
-  angular.module('app.consultasList.services',[
+  angular.module('app.consultas.services',[
 
   ]).factory('Consultas', Consultas);
 

@@ -1,7 +1,7 @@
 (function () {
     'use strict';
 
-    angular.module('app.consulta.directive', [
+    angular.module('app.consulta-create.directive', [
 
     ]).directive('consulta', consulta);
 
@@ -9,7 +9,7 @@
         return {
             scope: {},
             restrict: 'EA',
-            templateUrl: 'app/Usuarios/consulta/consulta.html',
+            templateUrl: 'app/consultas/consulta-create/consulta.html',
             controller: 'consultaCtrl',
             controllerAs: 'vm'
         }

@@ -1,7 +1,7 @@
 (function () {
     'use strict';
 
-    angular.module('app.consulta.router', [
+    angular.module('app.consulta-create.router', [
 
     ]).config(configure);
 
@@ -15,7 +15,7 @@
 
         $stateProvider
             .state('consulta', {
-                url: '/consulta/:idUsuario',
+                url: '/consulta-create/:idUsuario',
                 template: '<consulta/>'
             });
     };

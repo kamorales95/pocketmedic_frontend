@@ -12,9 +12,9 @@
       $urlRouterProvider.otherwise('/');
 
       $stateProvider
-          .state('consultadamin', {
-              url: '/consultadamin',
-              template: '<consultadamin/>'
+          .state('consultaadmin', {
+              url: '/consultaadmin',
+              template: '<consultaadmin/>'
       });
   };
 })();
