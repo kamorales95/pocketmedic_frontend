@@ -1,7 +1,7 @@
 (function () {
     'use strict';
 
-    angular.module('app.registro.route', [
+    angular.module('app.consulta-create.router', [
 
     ]).config(configure);
 
@@ -14,9 +14,9 @@
         $urlRouterProvider.otherwise('/');
 
         $stateProvider
-            .state('registro', {
-                url: '/registro',
-                template: '<registro/>'
+            .state('consulta', {
+                url: '/consulta-create',
+                template: '<consulta/>'
             });
     };
 })();

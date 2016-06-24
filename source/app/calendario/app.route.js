@@ -1,7 +1,7 @@
 (function () {
     'use strict';
 
-    angular.module('app.consultasCreate.route', [
+    angular.module('app.calendario.route', [
 
     ])
         .config(configure);
@@ -15,9 +15,9 @@
         $urlRouterProvider.otherwise('/');
 
         $stateProvider
-            .state('consultasCreate', {
-                url: '/consultasCreate',
-                template: '<consultas-create/>'
+            .state('calendario', {
+                url: '/calendario',
+                template: '<calendario-list/>'
                 /*views: {
                     'registro': {
                         template: '<registro/>'

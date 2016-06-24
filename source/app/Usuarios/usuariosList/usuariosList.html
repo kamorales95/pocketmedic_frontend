@@ -22,13 +22,18 @@
         <th><font style="color:white;"><font>Foto</font></th>
         <th><font style="color:white;"><font>Nombre</font></th>
         <th><font style="color:white;"><font>Apellidos</font></th>
+        <th><font style="color:white;"><font>Opciones</font></th>
       </thead>
       <tbody ng-repeat="usuario in vm.usuarios" ng-controller="LoginController as login">
         <!-- <tr><th> scope="row"</th>1</tr> -->
         <td scope="row"><font><font>sin imagen de perfil</font></font></td>
         <td scope="row"><font><font><a href="#/perfil/{{usuario.idUsuario}}">{{usuario.nombres}}</a></font></font></td>
         <td scope="row"><font><font>{{usuario.apellidos}}</font></font></td>
-        <td scope="row"><font><font><a href="#/consulta/{{login.getIdCurrentUser()}}/{{usuario.idUsuario}}">Crear consulta</a></font></font></td>
+        <td scope="row"><font>
+          <font>
+            <a href="#/consulta/{{login.getIdCurrentUser()}}/{{usuario.idUsuario}}">Crear consulta</a>
+             - <a href="#/citacreate/{{login.getIdCurrentUser()}}/{{usuario.idUsuario}}">Crear consulta</a>
+         </font></font></td>
         <!-- <td scope="row"><font><font><a href="#/perfil/{{usuario.idUsuario}}">Ver más</a></font></font> -->
         <!-- </td> -->
       </tbody>

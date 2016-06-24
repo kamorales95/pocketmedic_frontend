@@ -4,13 +4,13 @@
     <table class="table table-bordered">
       <thead style="background:black;">
         <!-- <tr><th>Foto</th><th>Nombre</th><th>Apellidos</th></tr> -->
-        <th><font style="color:white;"><font>Medico</font></th>
+        <th><font style="color:white;"><font>Especialidad</font></th>
         <th><font style="color:white;"><font>Fecha</font></th>
         <th><font style="color:white;"><font>Descripción</font></th>
       </thead>
       <tbody ng-repeat="consulta in vm.consultas" style="">
         <!-- <tr><th> scope="row"</th>1</tr> -->
-        <td scope="row"><font>{{consulta.medico.nombres}}<font></font></font></td>
+        <td scope="row"><font>{{consulta.categoria.titulos}}<font></font></font></td>
         <td scope="row"><font>{{consulta.fechaCon}}<font></font></font></td>
         <td scope="row"><font>{{consulta.descripcion}}<font></font></font></td>
         <!-- <td scope="row"><font><font><a href="">Ver más</a></font></font></td>-->
