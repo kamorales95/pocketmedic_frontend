@@ -11,13 +11,14 @@
         'ui.calendar',
         //'templates',
         'app.config',
+        'app.imagenes',
         'app.inicio',
         'app.footer',
         'app.header',
         'app.login',
         'app.ambiental',
         'app.registro',
-        'app.portafolio',
+        'app.portafolio',  
         'app.perfil',
         'app.Usuarios',
         'app.configuracion',
@@ -27,6 +28,7 @@
         'app.nuevacontraseña',
         'app.email',
         'app.bienvenido'
+
 
 
 

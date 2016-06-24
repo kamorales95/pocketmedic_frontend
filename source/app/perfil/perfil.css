@@ -87,6 +87,9 @@ color
   color: #f00;
   display: block;
 }
+.boton {
+  background-color: #01579b;
+}
 /** ------------------------------------------------ de aquí para abajo lo que se estaba usando de responsive ------------------------------------------ **/
 /*@media screen and (min-width:880px) and (max-width: 996px)
   .messeger
