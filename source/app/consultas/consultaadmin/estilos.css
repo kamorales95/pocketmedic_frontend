@@ -2,3 +2,28 @@
   margin-top: 5em;
   margin-bottom: -1em;
 }
+.consultaadmin {
+  background: #64b5f6;
+  text-align: center;
+  margin-top: 2em;
+  padding-bottom: 5em;
+}
+.tabla-consulta {
+  width: 50%;
+  display: inline-block;
+  border-radius: 0.5em;
+  border: 1px solid;
+  margin-top: 10em;
+  background: #fff;
+  margin-bottom: 58px;
+  text-align: left;
+}
+.tittle-consulta {
+  padding-bottom: 0.5em;
+  border-bottom: 1px solid #000;
+  display: inline-block;
+  font-size: 30px;
+  width: 100%;
+  text-align: center;
+  color: #2271b3;
+}

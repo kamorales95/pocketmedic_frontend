@@ -1,11 +1,17 @@
 
-<md-list  ng-cloak >
-  <div ng-repeat="consulta in vm.consultas" class="list-consulta">
-  <md-list-item class="secondary-button-padding">
-    <p>{{consulta.descripcion}}</p>
-    <md-icon  ng-click="doSecondaryAction($event)" class="fa fa-comments"></md-icon>
-  </md-list-item>
-  <md-divider></md-divider>
-</div>
+<div style="text-align:center; background: #64B5f6">
 
+<section  class="tablacon">
+
+<md-list class="tabla-consulta" >
+  <h1 class="tittle-consulta">Mis consultas</h1>
+  <div ng-repeat="consulta in vm.consultas" class="list-consulta">
+    <md-list-item class="secondary-button-padding">
+      <p>{{consulta.descripcion}}</p>
+      <md-icon  ng-click="doSecondaryAction($event)" class="fa fa-comments"></md-icon>
+    </md-list-item>
+    <md-divider></md-divider>
+  </div>
 </md-list>
+</section>
+</div>
