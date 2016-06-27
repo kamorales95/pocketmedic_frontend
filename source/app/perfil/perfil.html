@@ -1,4 +1,66 @@
-<section class="SectionPerfil">
+<section class="SectionPerfilC" style="text-align:centrer;">
+  <article class="FormPerfil" style="display:block;">
+
+    <h1 class="ConfiC" >Mi Perfil</h1>
+
+     <figure class="FormPerfil-imgC"  >
+       <img class="messegerC" src="../../img/messenger.jpg" style="width:100%"/>
+     </figure>
+
+  <form class="usuarioPerfilC" name="formConfig">
+    <div class="infoPersonalC">
+
+    <label class="InfoC" >Información personal</label><br>
+
+    <md-input-container class="md-block">
+    <label>Nombre</label>
+      <input required md-no-asterisk name="nombres" ng-model="vm.usuario.nombres" ng-disabled="true" style="color:black;">
+
+    </md-input-container>
+    <md-input-container class="md-block form-group has-success" >
+    <label>Apellidos</label>
+    <input required md-no-asterisk name="apellidos"  ng-model="vm.usuario.apellidos" ng-disabled="true" style="color:black;">
+    </md-input-container>
+    </div>
+
+      <div>
+    <label class="Contac">Información de contacto</label><br>
+
+  <md-input-container class="md-block">
+        <label>Sexo</label>
+        <input required md-no-asterisk name="sexo" ng-model="vm.usuario.sexo" ng-disabled="true" style="color:black;">
+  </md-input-container>
+
+  <md-input-container class="md-block">
+    <label>Fecha Nacimiento</label>
+    <input required md-no-asterisk name="direccion" ng-model="vm.usuario.fechaNac" ng-disabled="true" style="color:black;">
+  </md-input-container>
+
+  <md-input-container class="md-block">
+    <label>Teléfono</label>
+    <input required md-no-asterisk name="telefono" ng-model="vm.usuario.telefono" ng-disabled="true" style="color:black;">
+  </md-input-container>
+
+  <md-input-container class="md-block">
+    <label>Ubicación</label>
+    <input required md-no-asterisk name="direccion" ng-model="vm.usuario.direccion" ng-disabled="true" style="color:black;">
+  </md-input-container>
+  <md-input-container class="md-block">
+    <label>Email</label>
+    <input type="email" ng-pattern="/^.+@.+\..+$/" required md-no-asterisk name="email" ng-model="vm.usuario.email" ng-disabled="true" style="color:black;">
+  </md-input-container>
+
+    </div>
+    <section layout="row" layout-sm="column" layout-align="center center" layout-wrap>
+    </section><br>
+  </form>
+  </article>
+</section>
+
+
+
+
+<!-- <section class="SectionPerfil">
   <article class="FormPerfil" style="display:block;">
 
       <h1 class="textPer"> Bienvenido </h1>
@@ -54,8 +116,13 @@
 
   </form>
   </article>
-</section>
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+</section> -->
+
+
+
+
+
+
 <!--
 <section class="SectionPerfilC" style="text-align:centrer;">
   <article class="FormPerfil" style="display:block;">

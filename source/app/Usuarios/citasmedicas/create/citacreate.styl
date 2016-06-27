@@ -5,7 +5,8 @@
   background-repeat no-repeat
   background-size cover
   background-position fixed
-  padding 10em
+  padding-top 10em
+  padding-bottom 3em
 .FormConsulta
     background-color snow
     display inline-block
@@ -28,13 +29,22 @@
       border-bottom: 2px solid #448AFF
       margin-bottom: 1em
 
-@media screen and (max-width: 349px)
-    .FormConsulta
-      padding: 1em
-      width: 24em
-      margin-left: -106px
-      margin-top: 45px
-      &-title
-        margin-bottom 1em
-        border-radius 1em
-        color black
+@media (min-width: 464px) and (max-width: 733px)
+  .FormConsulta
+    width auto
+
+@media screen and (max-width: 463px)
+  .FormConsulta
+    width auto
+    padding 1em
+
+// @media screen and (max-width: 349px)
+//     .FormConsulta
+//       padding: 1em
+//       width: 24em
+//       margin-left: -106px
+//       margin-top: 45px
+//       &-title
+//         margin-bottom 1em
+//         border-radius 1em
+//         color black
