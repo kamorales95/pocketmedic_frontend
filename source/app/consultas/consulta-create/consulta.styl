@@ -1,12 +1,13 @@
-.Sectionconsulta
+.SectionCoonsulta
   text-align center
   /*background-image url('../../img/medicine_phixr.png')*/
-  background-color: #BBDEFB
+  background-color: #64b5f6
   background-repeat no-repeat
   background-size cover
   background-position fixed
-  padding 10em
-.FormConsulta
+  padding-top 10em
+  padding-bottom 3em
+.FormularioConsulta
     background-color snow
     display inline-block
     padding 2em
@@ -28,13 +29,28 @@
       border-bottom: 2px solid #448AFF
       margin-bottom: 1em
 
-@media screen and (max-width: 349px)
-    .FormConsulta
-      padding: 1em
-      width: 24em
-      margin-left: -106px
-      margin-top: 45px
-      &-title
-        margin-bottom 1em
-        border-radius 1em
-        color black
+@media (min-width: 464px) and (max-width: 733px)
+  .FormularioConsulta
+    width 30em
+  .FormConsultaFirst-container
+    margin 0 0.5em
+
+@media screen and (max-width: 463px)
+  .FormularioConsulta
+    width auto
+    padding 1.5em
+    &-tittle
+      font-size 26px
+  .FormConsultaFirst-container
+    margin 0 0.5em
+
+// @media screen and (max-width: 349px)
+//     .FormConsulta
+//       padding: 1em
+//       width: 24em
+//       margin-left: -106px
+//       margin-top: 45px
+//       &-title
+//         margin-bottom 1em
+//         border-radius 1em
+//         color black

@@ -18,7 +18,7 @@
         'app.login',
         'app.ambiental',
         'app.registro',
-        'app.portafolio',  
+        'app.portafolio',
         'app.perfil',
         'app.Usuarios',
         'app.configuracion',

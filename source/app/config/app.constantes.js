@@ -2,6 +2,7 @@
     'use strict';
 
     angular.module('app.config', [
+
     ]).constant('BASEURL', 'http://localhost:8080/PM-Backend/webresources/')
 
     //En este módulo se pueden declarar y asignar todas las constantes

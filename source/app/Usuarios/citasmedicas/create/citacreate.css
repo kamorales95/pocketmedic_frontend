@@ -5,7 +5,8 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: fixed;
-  padding: 10em;
+  padding-top: 10em;
+  padding-bottom: 3em;
 }
 .FormConsulta {
   background-color: #fffafa;
@@ -31,16 +32,14 @@
   border-bottom: 2px solid #448aff;
   margin-bottom: 1em;
 }
-@media screen and (max-width: 349px) {
+@media (min-width: 464px) and (max-width: 733px) {
   .FormConsulta {
-    padding: 1em;
-    width: 24em;
-    margin-left: -106px;
-    margin-top: 45px;
+    width: auto;
   }
-  .FormConsulta-title {
-    margin-bottom: 1em;
-    border-radius: 1em;
-    color: #000;
+}
+@media screen and (max-width: 463px) {
+  .FormConsulta {
+    width: auto;
+    padding: 1em;
   }
 }

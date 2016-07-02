@@ -1,58 +1,62 @@
-<section class="Sectionconsulta">
-    <form id="FormRegistro" name="ConsultaForm" ng-submit="vm.create()" class="FormConsulta">
-      <h1 class="FormConsulta-tittle">Crear Consulta</h1>
+<section class="SectionCoonsulta">
+  <div class="container FormConsultaFirst-container">
+    <div class="row">
+      <form id="FormRegistro" name="ConsultaForm" ng-submit="vm.create()" class="FormularioConsulta">
+        <h1 class="FormularioConsulta-tittle">Crear Consulta</h1>
 
-      <md-input-container class="md-block">
-        <label>Descripción</label>
-        <input md-maxlength="45" required md-no-asterisk name="descripcion" ng-model="vm.consultas.descripcion" id="descripcion">
-        <div ng-messages="ConsultaForm.descripcion.$error">
-          <div ng-message="required">Este campo es requerido.</div>
-          <div ng-message="md-maxlength">No puede superar 40 caracteres.</div>
-        </div>
-      </md-input-container>
+        <md-input-container class="md-block">
+          <label>Descripción</label>
+          <input md-maxlength="45" required md-no-asterisk name="descripcion" ng-model="vm.consultas.descripcion" id="descripcion">
+          <div ng-messages="ConsultaForm.descripcion.$error">
+            <div ng-message="required">Este campo es requerido.</div>
+            <div ng-message="md-maxlength">No puede superar 40 caracteres.</div>
+          </div>
+        </md-input-container>
 
-      <md-autocomplete md-selected-item="vm.consultas.categoria"
-                       md-search-text="vm.searchTexttitulosycertificados"
-                       md-items="item in vm.titulos(vm.searchTexttitulosycertificados)"
-                       md-item-text="item.titulos"
-                       md-min-length="1"
-                       md-floating-label="Titulos"
-                       name="titulos"
-                      style="margin:0;">
-        <md-item-template style="margin:0;">
-          <span
-          md-highlight-text="vm.searchTexttitulosycertificados"
-          md-highlight-flags="^i">
-            {{item.titulos}}</span>
-        </md-item-template>
-          <md-not-found style="margin:0;">
-            el titulo "{{vm.searchTexttitulosycertificados}}" no fue encontrado.
-          </md-not-found>
-            <div ng-messages="RegisterForm.ciudadDomicilio.$error">
+        <md-autocomplete md-selected-item="vm.consultas.categoria"
+                         md-search-text="vm.searchTexttitulosycertificados"
+                         md-items="item in vm.titulos(vm.searchTexttitulosycertificados)"
+                         md-item-text="item.titulos"
+                         md-min-length="1"
+                         md-floating-label="Titulos"
+                         name="titulos"
+                        style="margin:0;">
+          <md-item-template style="margin:0;">
+            <span
+            md-highlight-text="vm.searchTexttitulosycertificados"
+            md-highlight-flags="^i">
+              {{item.titulos}}</span>
+          </md-item-template>
+            <md-not-found style="margin:0;">
+              el titulo "{{vm.searchTexttitulosycertificados}}" no fue encontrado.
+            </md-not-found>
+              <div ng-messages="RegisterForm.ciudadDomicilio.$error">
+                <div ng-message="required">Este campo es requerido.</div>
+              </div>
+        </md-autocomplete>
+
+
+        <!--
+        <div class="">
+          <label style="color:#c0c0c0; margin-bottom:1em;">Fecha Consulta</label><br>
+          <md-datepicker ng-model="vm.consulta.fechaCita" required md-placeholder="Fecha" name="fechaConsu" id="fecha"></md-datepicker>
+            <div ng-messages="ConsultaForm.fechaCita.$error">
               <div ng-message="required">Este campo es requerido.</div>
             </div>
-      </md-autocomplete>
+        </div><br>
+      -->
 
+        <section layout="row" layout-sm="column" layout-align="center center" layout-wrap style="margin-top:.5em;">
+            <md-button type="submit" class="md-raised md-primary" id="Guardar" ng-disabled="ConsultaForm.$invalid"
+                       ng-model="Guardar"
+                       style="background:#4FC3F7;color:white;padding:1px 5em;">Enviar</md-button>
+            <md-button ng-href="/" class="md-raised md-warn" style="background:#01579B;color:white;padding:1px 5em;">Cancelar</md-button>
+        </section>
 
-      <!--
-      <div class="">
-        <label style="color:#c0c0c0; margin-bottom:1em;">Fecha Consulta</label><br>
-        <md-datepicker ng-model="vm.consulta.fechaCita" required md-placeholder="Fecha" name="fechaConsu" id="fecha"></md-datepicker>
-          <div ng-messages="ConsultaForm.fechaCita.$error">
-            <div ng-message="required">Este campo es requerido.</div>
-          </div>
-      </div><br>
-    -->
+        <!-- <md-button type="submit" class="md-raised md-primary" id="BotonGuardar" ng-disabled="ConsultaForm.$invalid" ng-model="Guardar">Guardar</md-button>
+        <md-button ng-href="/" class="md-raised md-warn">Cancelar</md-button> -->
 
-      <section layout="row" layout-sm="column" layout-align="center center" layout-wrap style="margin-top:.5em;">
-          <md-button type="submit" class="md-raised md-primary" id="Guardar" ng-disabled="ConsultaForm.$invalid"
-                     ng-model="Guardar"
-                     style="background:#4FC3F7;color:white;padding:1px 5em;">Enviar</md-button>
-          <md-button ng-href="/" class="md-raised md-warn" style="background:#01579B;color:white;padding:1px 5em;">Cancelar</md-button>
-      </section>
-
-      <!-- <md-button type="submit" class="md-raised md-primary" id="BotonGuardar" ng-disabled="ConsultaForm.$invalid" ng-model="Guardar">Guardar</md-button>
-      <md-button ng-href="/" class="md-raised md-warn">Cancelar</md-button> -->
-
-    </form>
+      </form>
+    </div>
+  </div>
 </section>
