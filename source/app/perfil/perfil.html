@@ -4,7 +4,9 @@
     <h1 class="ConfiC" >Mi Perfil</h1>
 
      <figure class="FormPerfil-imgC"  >
-       <img class="messegerC" src="../../img/messenger.jpg" style="width:100%"/>
+       <img ng-if="vm.usuario.avatar" ng-src="{{'data:image/png;base64,' + vm.usuario.avatar}}" width="150px" height="150px" style="border-radius: 51%;"/>
+
+       <img ng-if="!vm.usuario.avatar" class="messegerC" src="../../img/messenger.jpg" style="width:100%"/>
      </figure>
 
   <form class="usuarioPerfilC" name="formConfig">
@@ -116,138 +118,7 @@
 
   </form>
   </article>
-</section> -->
-
-
-
-
-
-
-<!--
-<section class="SectionPerfilC" style="text-align:centrer;">
-  <article class="FormPerfil" style="display:block;">
-
-    <h1 class="ConfiC" >Configuración</h1>
-
-     <figure class="FormPerfil-imgC"  >
-       <img class="messegerC" src="../../img/messenger.jpg" style="width:100%"/>
-     </figure>
-
-  <form class="usuarioPerfilC" name="formConfig">
-    <div class="infoPersonalC">
-
-    <label class="InfoC" >Información personal</label><br>
-
-    <md-input-container class="md-block">
-    <label>Nombre</label>
-      <input required md-no-asterisk name="nombres" ng-model="vm.usuario.nombres" style="color:black;">
-
-    </md-input-container>
-    <md-input-container class="md-block form-group has-success" >
-    <label>Apellidos</label>
-    <input required md-no-asterisk name="apellidos"  ng-model="vm.usuario.apellidos" style="color:black;">
-    </md-input-container>
-    </div>
-
-      <div>
-    <label class="Contac">Información de contacto</label><br>
-
-  <md-input-container class="md-block">
-        <label>Sexo</label>
-        <input required md-no-asterisk name="sexo" ng-model="vm.usuario.sexo" style="color:black;">
-  </md-input-container>
-
-  <md-input-container class="md-block">
-    <label>Fecha Nacimiento</label>
-    <input required md-no-asterisk name="direccion" ng-model="vm.usuario.fechaNac" style="color:black;">
-  </md-input-container>
-
-  <md-input-container class="md-block">
-    <label>Teléfono</label>
-    <input required md-no-asterisk name="telefono" ng-model="vm.usuario.telefono" style="color:black;">
-  </md-input-container>
-
-  <md-input-container class="md-block">
-    <label>Ubicación</label>
-    <input required md-no-asterisk name="direccion" ng-model="vm.usuario.direccion" style="color:black;">
-  </md-input-container>
-  <md-input-container class="md-block">
-    <label>Email</label>
-    <input type="email" ng-pattern="/^.+@.+\..+$/" required md-no-asterisk name="email" ng-model="vm.usuario.email" style="color:black;">
-  </md-input-container>
-  <!-- <section>
-    <h1 style="color:#2271b3;">Inhabilitar cuenta</h1>
-    <p>Tenga presente que si usted deshabilita su cuenta, esta quedara inactiva hasta que vuelva a iniciar sesión con ella</p>
-    <!-- <md-button class="md-raised md-primary" style="padding:0 10em;">Inhabilitar</md-button> -->
-    <!-- <md-checkbox  style="color:#0000;font-weight:bold;" class="md-primary" name="TerminosCondiciones" id="chekched" ng-model="vm.usuario.estado" >Inhabilitar Mi Cuenta</md-checkbox>
-  </section> -->
-    <!-- </div>
-    <section layout="row" layout-sm="column" layout-align="center center" layout-wrap>
-
-  <md-button ng-click="vm.update()" ng-disabled="formConfig.$invalid" class="buttomC"
-  class="md-raised" style="background:#4FC3F7; color:white;">Guardar</md-button>
-
-    <md-button ng-disabled="formConfig.$invalid" href="/" class="buttom1C" style="background:#01579B;color:white;">Cancelar</md-button>
-
-    </section><br>
-  </form>
-  </article>
-</section> -->
-
-
-
-
-
-
-<!-- <section class="Profile-container">
-  <form class="ProfileForm">
-    <div class="HeaderForm">
-      <h1 class="text-center Profile-title">Bienvenido</h1>
-       <figure class="ProfileImage-container">
-         <img class="Profile-image" src="../../img/messenger.jpg" />
-       </figure>
-    </div>
-
-    <div class="infoPersonal">
-
-    <md-input-container class="name">
-    <label>Nombre</label>
-      <input required md-no-asterisk name="nombres" name="apellidos" ng-model="vm.usuario.nombres + vm.usuario.apellidos"  ng-disabled="true" ;>
-
-     </md-input-container>
-     <md-input-container class="especial" >
-     <label>Especialidad</label>
-    <input required md-no-asterisk name="Especialidad"  ng-model="vm.tituloscertificados"  ng-disabled="true";>
-    </md-input-container>
-  </div> <br> <br>
-
-
-
-
-
-      <label > <p class="labeltext"> Información de contacto </p></label><br>
-
-      <div class="Infocontacto">
-
-  <md-input-container class="tel">
-    <label>Teléfono</label>
-    <input required md-no-asterisk name="telefono" ng-model="vm.usuario.telefono" ng-disabled="true";>
-  </md-input-container>
-
-
-
-      <md-input-container class="direc">
-        <label>Dirección</label>
-        <input required md-no-asterisk name="direccion" ng-model="vm.usuario.direccion" ng-disabled="true";>
-      </md-input-container>
-
-      <md-input-container class="correo">
-        <label>Email</label>
-        <input  type="email" ng-pattern="/^.+@.+\..+$/" required md-no-asterisk name="email" ng-model="vm.usuario.email" ng-disabled="true";>
-      </md-input-container>
-
-    </md-input-container> <br>
-  </div>
-
-  </form>
+<<<<<<< HEAD
+</section>
+=======
 </section> -->

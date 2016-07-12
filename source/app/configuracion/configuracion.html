@@ -4,7 +4,7 @@
        <figure class="FormPerfil-imgC">
         <div class="photo">
           <img ng-if="vm.usuario.avatar" ng-src="{{'data:image/png;base64,' + vm.usuario.avatar}}" width="150px" height="150px" style="border-radius: 51%;"/>
-           <button class="boton"><label style="color:white;" for="foto-input">Subir Foto</label></button>
+           <button class="boton" ng-click="vm.update()">Subir Foto</button>
              <input type="file" id="foto-input" on-read-img="vm.loadFoto($fileContent)">
         </div>
       </figure>

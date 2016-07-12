@@ -15,8 +15,9 @@
 
 
            vm.update = function() {
+             console.log(vm.usuario);
                 Usuarios.update(vm.usuario, function() {
-                  console.log(vm.usuario);
+
                     $location.path('/');
                     $mdToast.show(
                         $mdToast.simple()
