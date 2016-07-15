@@ -13,7 +13,7 @@
 
       $stateProvider
           .state('consultaadminmedic', {
-              url: '/consultaadminmedic',
+              url: '/consultaadminmedic/:idUsuario',
               template: '<consultaadminmedic/>'
       });
   };

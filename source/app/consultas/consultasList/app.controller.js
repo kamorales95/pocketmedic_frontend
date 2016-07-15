@@ -21,6 +21,7 @@
       //      limit: 5,
       //      page: 1
       //  };
+      
        vm.consultas = Consultas.query();
 
    }

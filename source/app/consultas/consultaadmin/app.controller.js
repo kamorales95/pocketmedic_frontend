@@ -10,8 +10,9 @@
     var vm = this;
 
     vm.consultas = Consultas.query();
-    vm.respuestas=Respuestas.findbyIdUsuario({idUsuarios:$auth.getPayload().sub});
     console.log(vm.respuestas);
+    vm.respuestas=Respuestas.findbyIdUsuario({idUsuarios:$auth.getPayload().sub});
+
 
     vm.currentrespuesta=null;
     vm.updatecurrentrespuesta=function(str){
