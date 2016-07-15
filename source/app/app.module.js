@@ -29,7 +29,8 @@
         'app.email',
         'app.bienvenido',
         'app.calendario',
-        'app.consultas'
+        'app.consultas',
+        'app.respuestas'
 
 
 

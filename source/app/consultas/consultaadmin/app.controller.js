@@ -4,17 +4,19 @@
   angular.module('app.consultaadmin.controller',[
   ]).controller('consultaadminCtrl', consultaadminCtrl);
 
-  consultaadminCtrl.$inject=['$location', '$mdToast', 'Consultas', 'Usuarios', '$stateParams'];
-  function consultaadminCtrl($location, $mdToast, Consultas, Usuarios, $stateParams){
+  consultaadminCtrl.$inject=['$location', '$mdToast', 'Consultas', 'Usuarios', '$stateParams','Respuestas','$auth'];
+  function consultaadminCtrl($location, $mdToast, Consultas, Usuarios, $stateParams,Respuestas,$auth){
 
     var vm = this;
 
     vm.consultas = Consultas.query();
+    vm.respuestas=Respuestas.findbyIdUsuario({idUsuarios:$auth.getPayload().sub});
+    console.log(vm.respuestas);
 
-    //vm.consultas = Consultas.query();
-      console.log('Hola Que Hace');
-       //vm.consultas=Consultas.findByUsuario({idUsuario: $stateParams.idUsuario});
-       console.log('Hola Que Hace');
+    vm.currentrespuesta=null;
+    vm.updatecurrentrespuesta=function(str){
+      vm.currentrespuesta= Respuestas.get({idRespuestas:str});
+    }
 
   }
 })();

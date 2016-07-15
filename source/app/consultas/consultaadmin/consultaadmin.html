@@ -3,15 +3,76 @@
 
 <section  class="tablacon">
 
-<md-list class="tabla-consulta" >
-  <h1 class="tittle-consulta">Mis consultas</h1>
-  <div ng-repeat="consulta in vm.consultas" class="list-consulta">
+
+
+  <md-list class="tabla-consulta" >
+    <h1 class="tittle-consulta">Mis consultas</h1>
+    <md-content>
+      <md-tabs md-dynamic-height md-border-bottom >
+        <md-tab>
+      <md-tab-label>
+        <md--icon class="fa fa-hourglass-start"></md-icon>
+        <p>Consultas</p>
+      </md-tab-label>
+      <md-tab-body>
+        <md-subheader class="md-no-sticky">Pedidos En Espera</md-subheader>
+        <div ng-repeat="consulta in vm.consultas" class="list-consulta">
+          <md-list-item class="secondary-button-padding">
+            <p>{{consulta.descripcion}}</p>
+          </md-list-item>
+          <md-divider></md-divider>
+        </div>
+      </md-tab-body>
+    </md-tab>
+
+    <md-tab>
+  <md-tab-label>
+    <md--icon class="fa fa-pencil-square-o"></md-icon>
+    <p>Respuestas</p>
+  </md-tab-label>
+  <md-tab-body>
+  <md-subheader class="md-no-sticky">Respuestas</md-subheader>
+  <div ng-repeat="respuesta in vm.respuestas" class="list-consulta">
     <md-list-item class="secondary-button-padding">
-      <p>{{consulta.descripcion}}</p>
-      <md-icon  ng-click="doSecondaryAction($event)" class="fa fa-comments"></md-icon>
+      <p>{{respuesta.idConsultas.descripcion}}</p>
+      <button type="button"  data-toggle="modal" data-target="#modalmorerespuesta" ng-click="vm.updatecurrentrespuesta(respuesta.idRespuestas)">
+        <md-icon   class="fa fa-comments"></md-icon>
+      </button>
     </md-list-item>
     <md-divider></md-divider>
   </div>
-</md-list>
+  </md-tab-body>
+  </md-tab>
+
+
+
+
+      </md-tabs>
+    </md-content>
+
+
+  </md-list>
 </section>
+
+<!-- Modal -->
+<div class="modal fade" id="modalmorerespuesta" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Responder Consulta</h4>
+      </div>
+      <div class="modal-body">
+        <h2>Consulta</h2>
+        <p>{{vm.currentrespuesta.idConsultas.descripcion}}</p>
+        <md-divider ng-if="!$last"></md-divider>
+        <h2>Respuesta</h2>
+        <p>{{vm.currentrespuesta.descripcion}}</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
 </div>

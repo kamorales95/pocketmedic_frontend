@@ -66,11 +66,10 @@
         </md-input-container>
         <md-input-container class="md-block">
           <label>Teléfono</label>
-          <input md-maxlength="16" required md-no-asterisk name="telefono" ng-model="vm.usuario.telefono" ng-pattern="/^[0-9a-zA-Z]+$/" id="telefono">
+          <input type="number" required md-no-asterisk name="telefono" ng-model="vm.usuario.telefono" ng-pattern="/^[0-9a]+$/" id="telefono">
           <div ng-messages="RegisterForm.telefono.$error">
             <div ng-message="required">Este campo es requerido.</div>
             <div ng-message="pattern">El Telefono No Es Valido.</div>
-            <div ng-message="md-maxlength">El teléfono no puede superar 16 caracteres.</div>
           </div>
         </md-input-container>
         <md-input-container class="md-block">
