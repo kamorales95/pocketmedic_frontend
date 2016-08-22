@@ -23,7 +23,6 @@ color
   text-align: left;
   width: 40%;
   display: inline-block;
-  margin-left: 10em;
   font-size: 1.3em;
   margin-top: 1em;
 }
@@ -31,7 +30,7 @@ color
   float: left;
   width: 10em;
   display: block;
-  margin: -4em;
+  margin-top: 22px;
 }
 .messeger {
   width: 12em;
@@ -39,9 +38,9 @@ color
   margin-left: 8em;
 }
 .textPer {
-  border-bottom: 2px solid #1e0c53;
+  border-bottom: 2px solid #2271b3;
   padding-bottom: 2em;
-  color: #000;
+  color: #2271b3;
   text-align: center;
 }
 .Informpersonal {
@@ -52,8 +51,9 @@ color
 }
 .Infocontacto {
   margin-bottom: 2em;
-  border-bottom: 2px solid #000;
+  border-bottom: 2px solid #2271b3;
   display: block;
+  color: #2271b3;
 }
 .buttom1 {
   background: #01579b;
@@ -85,6 +85,9 @@ color
 .correo {
   color: #f00;
   display: block;
+}
+.boton {
+  background-color: #01579b;
 }
 /** ------------------------------------------------ de aquí para abajo lo que se estaba usando de responsive ------------------------------------------ **/
 /*@media screen and (min-width:880px) and (max-width: 996px)
@@ -278,7 +281,6 @@ color
   background: #fffafa;
 }
 .infoPersonal {
-  width: 100%;
   display: inline-block;
 }
 .Infocontacto {

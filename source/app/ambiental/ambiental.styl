@@ -1,23 +1,31 @@
 .Section-3r
-    margin-top 3.5em
-    display inline-block
-    background-repeat no-repeat
-    background-size cover
-    background-image url('../../img/verde.jpg')
+    margin-top 10.5em
+    text-align center
+    // display inline-block
+    // background-repeat no-repeat
+    // background-size cover
+    // background-image url('../../img/verde.jpg')
+
+.TitleMain-container
+  text-align center
 
 .Titulo-page
-    border-bottom 2px solid darkgreen
+    border-bottom 2px solid #2271b3
+    display inline-block
     padding-bottom .2em
 
 .Descriccion-page
     width 50%
     margin 0 auto
+    font-size 18px
 
 .Titulo-page,
 .Descriccion-page
     text-align center
     margin-bottom .5em
 
+.SubTitles-container
+  text-align center
 
 .Div-3r
     display inline-block
@@ -26,7 +34,8 @@
 .Titulo-3r
     padding-bottom .2em
     margin-bottom .5em
-    border-bottom 3px solid #00F700
+    border-bottom 3px solid #2271b3
+    display inline-block
 
 .Info-3r
     display inline-block
@@ -34,6 +43,7 @@
     vertical-align top
     margin-top 1em
     font-size 1.3em
+    text-align justify
 
 .Image3r-container
     display inline-block
@@ -52,22 +62,26 @@
     text-align center
     margin 1em auto
 
-.VIdeo3r,
+.VIdeo3r
+  text-align center
+  margin-bottom 2em
+  width 50%
+  margin 0 auto
+
 .Div-ecoTips
     text-align center
     margin-bottom 2em
-    width 50%
+    width 80%
     margin 0 auto
-    margin-bottom 1em
 
-@media screen and (max-width 750px)
-  .Section-3r
-    background-image url('../../img/verde3.jpg')
+@media screen and (max-width 600px)
+  .Descriccion-page
+    width 80%
 
-@media screen and (min-width 349px)
-  .Titulo-page
-    margin-top 3em
-    font-size 34px
+// @media screen and (min-width 349px)
+//   .Titulo-page
+//     margin-top 3em
+//     font-size 34px
 
 @media screen and (min-width 349px)
   .Descriccion-page
@@ -78,10 +92,9 @@
     margin-left -11px
     text-align center
 
-@media screen and (min-width 349px)
+@media screen and (max-width 1151px)
   .Info-3r
-    text-align left
-    margin-left 51px
+    width 100%
 
 @media screen and (min-width 349px)
   .Titulo-V
