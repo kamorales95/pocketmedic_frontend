@@ -1,3 +1,7 @@
 # Dependency directory
 node_modules/
+<<<<<<< HEAD
 source/lib/
+=======
+source/app/Usuarios/consultasCreate/
+>>>>>>> b7b97648eff8c1db31d1d2bdd3bf71d4a52f5043

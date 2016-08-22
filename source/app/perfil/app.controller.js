@@ -8,14 +8,16 @@
     function perfilCtrl($stateParams, $location, $mdToast, Usuarios){
       var vm = this;
       vm.SelectRol;
+      vm.loadFoto = loadFoto;
 
            vm.usuario = Usuarios.get({ idUsuario: $stateParams.idUsuario });
           //  console.log(vm.usuario);
 
 
            vm.update = function() {
+             console.log(vm.usuario);
                 Usuarios.update(vm.usuario, function() {
-                  console.log(vm.usuario);
+
                     $location.path('/');
                     $mdToast.show(
                         $mdToast.simple()
@@ -24,7 +26,9 @@
                 });
             }
 
-
+function loadFoto($fileContent) {
+  vm.usuario.avatar = $fileContent;
+}
 
     }
 

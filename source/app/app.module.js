@@ -8,8 +8,10 @@
         'ngMaterial',
         'ngMessages',
         'satellizer',
+        'ui.calendar',
         //'templates',
         'app.config',
+        'app.imagenes',
         'app.inicio',
         'app.footer',
         'app.header',
@@ -25,7 +27,11 @@
         'app.recuperarcontraseña',
         'app.nuevacontraseña',
         'app.email',
-        'app.bienvenido'
+        'app.bienvenido',
+        'app.calendario',
+        'app.consultas',
+        'app.respuestas'
+
 
 
 

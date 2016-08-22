@@ -1,93 +1,94 @@
-/*.SectionPerfil
-  background #607D8B
-  text-align center
-  padding  12em
-
-.Perfil
-  padding-top 3em
-  background-color snow
-
-.FormPerfil
-  background #EEEEEE
-  display flex
-  justify-content space-between
-  padding 6em
-  margin auto
-  border-radius 0.1em
-  box-shadow 0.1em 0.1em  #555
-  max-width 84em
-  width 90%
-
-
-.infoPersonal
-  color
-  text-align left
-  width 40%
-  display inline-block
-  margin-left 10em
-  font-size 1.3em
-  margin-top 1em
-
-.FormPerfil-img
-  float left
-  width 10em
-  display block
-  margin -4em
-
-.messeger
-  width 12em
-  margin-top 5em
-  margin-left 8em
-
-
-.textPer
-  border-bottom 2px solid #1E0C53
-  padding-bottom 2em
-  color black
-  text-align center
-
-.Informpersonal
-  margin-bottom 2em
-  border-bottom  2px
-  display block
-  color black
-
-.Infocontacto
-  margin-bottom 2em
-  border-bottom 2px solid black
-  display:block
-
-
-.buttom1
-  background #01579B
-  margin -1
-  color white
-  vertical-align top
-
-.mapaContainer
-  text-align center
-
-.mapa
-  display inline-block
-  background-size cover
-
-.name
-  color black
-
-.especial
-  color black
-
-.tel
-  color black
-  display: block
-
-.direc
-  color black
-  display: block
-
-.correo
-  color red
-  display: block*/
+.SectionPerfil {
+  background: #64b5f6;
+  text-align: center;
+  padding: 12em;
+}
+.Perfil {
+  padding-top: 3em;
+  background-color: #fffafa;
+}
+.FormPerfil {
+  background: #eee;
+  display: flex;
+  justify-content: space-between;
+  padding: 6em;
+  margin: auto;
+  border-radius: 0.1em;
+  box-shadow: 0.1em 0.1em #555;
+  max-width: 84em;
+  width: 90%;
+}
+.infoPersonal {
+color
+  text-align: left;
+  width: 40%;
+  display: inline-block;
+  font-size: 1.3em;
+  margin-top: 1em;
+}
+.FormPerfil-img {
+  float: left;
+  width: 10em;
+  display: block;
+  margin-top: 22px;
+}
+.messeger {
+  width: 12em;
+  margin-top: 5em;
+  margin-left: 8em;
+}
+.textPer {
+  border-bottom: 2px solid #2271b3;
+  padding-bottom: 2em;
+  color: #2271b3;
+  text-align: center;
+}
+.Informpersonal {
+  margin-bottom: 2em;
+  border-bottom: 2px;
+  display: block;
+  color: #000;
+}
+.Infocontacto {
+  margin-bottom: 2em;
+  border-bottom: 2px solid #2271b3;
+  display: block;
+  color: #2271b3;
+}
+.buttom1 {
+  background: #01579b;
+  margin: -1;
+  color: #fff;
+  vertical-align: top;
+}
+.mapaContainer {
+  text-align: center;
+}
+.mapa {
+  display: inline-block;
+  background-size: cover;
+}
+.name {
+  color: #000;
+}
+.especial {
+  color: #000;
+}
+.tel {
+  color: #000;
+  display: block;
+}
+.direc {
+  color: #000;
+  display: block;
+}
+.correo {
+  color: #f00;
+  display: block;
+}
+.boton {
+  background-color: #01579b;
+}
 /** ------------------------------------------------ de aquí para abajo lo que se estaba usando de responsive ------------------------------------------ **/
 /*@media screen and (min-width:880px) and (max-width: 996px)
   .messeger
@@ -280,7 +281,6 @@
   background: #fffafa;
 }
 .infoPersonal {
-  width: 100%;
   display: inline-block;
 }
 .Infocontacto {
