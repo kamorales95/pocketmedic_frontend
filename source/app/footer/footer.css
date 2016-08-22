@@ -139,8 +139,3 @@
   text-decoration: none;
   color: #fff;
 }
-@media screen and (max-width: 385px) {
-  .Footer-List {
-    display: initial;
-  }
-}

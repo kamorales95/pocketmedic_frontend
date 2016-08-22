@@ -53,9 +53,7 @@
     function Ciudades($resource, BASEURL) {
         return $resource(BASEURL + 'ciudades/:idCiudad', {
             idCiudad: '@idCiudad'
-
-        },
-        {
+        },{
           queryByNombre: {
             url: BASEURL + 'ciudades/nombre/:query',
             method: 'GET',

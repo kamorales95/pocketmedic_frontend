@@ -79,7 +79,6 @@
 
   function isUser() {
     if (isAuthenticated()){
-      console.log('USER');
       return $auth.getPayload().roles.indexOf('USER') !== -1;
     }else{
       return false;
@@ -89,7 +88,6 @@
 
   function isMedic() {
     if (isAuthenticated()){
-      console.log('MEDIC');
       return $auth.getPayload().roles.indexOf('MEDIC') !== -1;
     }else{
       return false;

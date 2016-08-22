@@ -1,14 +1,11 @@
 <section class="SectionPerfilC" style="text-align:centrer;">
   <article class="FormPerfil" style="display:block;">
-    <h1 class="ConfiC" >Configuración</h1>
-       <figure class="FormPerfil-imgC">
-        <div class="photo">
-          <img ng-if="vm.usuario.avatar" ng-src="{{'data:image/png;base64,' + vm.usuario.avatar}}" width="150px" height="150px" style="border-radius: 51%;"/>
-           <button class="boton" ng-click="vm.update()">Subir Foto</button>
-             <input type="file" id="foto-input" on-read-img="vm.loadFoto($fileContent)">
-        </div>
-      </figure>
 
+    <h1 class="ConfiC" >Configuración</h1>
+
+     <figure class="FormPerfil-imgC"  >
+       <img class="messegerC" src="../../img/messenger.jpg" style="width:100%"/>
+     </figure>
 
   <form class="usuarioPerfilC" name="formConfig">
     <div class="infoPersonalC">
@@ -52,12 +49,12 @@
     <label>Email</label>
     <input type="email" ng-pattern="/^.+@.+\..+$/" required md-no-asterisk name="email" ng-model="vm.usuario.email" style="color:black;">
   </md-input-container>
-  <!-- <section>
+  <section>
     <h1 style="color:#2271b3;">Inhabilitar cuenta</h1>
     <p>Tenga presente que si usted deshabilita su cuenta, esta quedara inactiva hasta que vuelva a iniciar sesión con ella</p>
     <!-- <md-button class="md-raised md-primary" style="padding:0 10em;">Inhabilitar</md-button> -->
-    <!-- <md-checkbox  style="color:#0000;font-weight:bold;" class="md-primary" name="TerminosCondiciones" id="chekched" ng-model="vm.usuario.estado" >Inhabilitar Mi Cuenta</md-checkbox>
-  </section> -->
+    <md-checkbox  style="color:#0000;font-weight:bold;" class="md-primary" name="TerminosCondiciones" id="chekched" ng-model="vm.usuario.estado" >Inhabilitar Mi Cuenta</md-checkbox>
+  </section>
     </div>
     <section layout="row" layout-sm="column" layout-align="center center" layout-wrap>
 

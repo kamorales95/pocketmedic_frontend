@@ -1,186 +1,181 @@
 <section class="SectionRegistro">
-  <div class="container RegistroFirst-container">
-    <div class="row RegistroContent">
-      <form id="FormRegistro" class="FormRegistro" name="RegisterForm" ng-submit="vm.create()">
-        <h1 class="FormRegistro-tittle">Registro</h1>
+  <form id="FormRegistro" class="FormRegistro" name="RegisterForm" ng-submit="vm.create()">
+    <h1 class="FormRegistro-tittle">Registro</h1>
 
-        <md-input-container class="md-block">
-          <label>Elija Un Rol</label>
-          <md-select ng-model="vm.SelectRol" required style="color:black;" id="rol">
-            <md-option ng-repeat="rol in vm.roles" ng-value="rol">
-              {{rol.nombreRol}}
-            </md-option>
-          </md-select>
-        </md-input-container>
+    <md-input-container class="md-block">
+      <label>Elija Un Rol</label>
+      <md-select ng-model="vm.SelectRol" required style="color:black;" id="rol">
+        <md-option ng-repeat="rol in vm.roles" ng-value="rol">
+          {{rol.nombreRol}}
+        </md-option>
+      </md-select>
+    </md-input-container>
 
-        <md-autocomplete md-selected-item="vm.tituloscertificados"
-                         ng-show="!(vm.SelectRol.idRol === 'USER')"
-                         md-search-text="vm.searchTexttitulosycertificados"
-                         md-items="item in vm.titulos(vm.searchTexttitulosycertificados)"
-                         md-item-text="item.titulos"
-                         md-min-length="1"
-                         md-floating-label="Especialidad"
-                         required
-                         name="titulos"
-                        style="margin:0;">
-          <md-item-template style="margin:0;">
-            <span
-            md-highlight-text="vm.searchTexttitulosycertificados"
-            md-highlight-flags="^i">
-              {{item.titulos}}</span>
-          </md-item-template>
-            <md-not-found style="margin:0;">
-              el titulo "{{vm.searchTexttitulosycertificados}}" no fue encontrado.
-            </md-not-found>
-              <div ng-messages="RegisterForm.ciudadDomicilio.$error">
-                <div ng-message="required">Este campo es requerido.</div>
-              </div>
-        </md-autocomplete>
-
-        <!-- <md-input-container class="md-block">
-          <label>Elija Su Especialidad</label>
-          <md-select ng-model="vm.titulos" required style="color:black;" id="rol">
-            <md-option ng-repeat="titulo in vm.titulos" ng-value="titulo">
-              {{titulo.titulos}}
-            </md-option>
-          </md-select>
-        </md-input-container> -->
-
-        <md-input-container class="md-block">
-          <label>Nombres</label>
-          <input type="text" md-maxlength="20" required md-no-asterisk name="nombres" pattern="^[a-zA-Z_áéíóúñ\s]*$"
-                  ng-model="vm.usuario.nombres" id="nombre">
-          <div ng-messages="RegisterForm.nombres.$error">
-            <div ng-message="required">Este campo es requerido.</div>
-            <div ng-message="md-maxlength">El nombre no puede superar 40 caracteres.</div>
-            <div ng-message="pattern">El nombre no puede contener numeros.</div>
-          </div>
-        </md-input-container>
-        <md-input-container class="md-block">
-          <label>Apellidos</label>
-          <input  md-maxlength="40" required md-no-asterisk name="apellidos" pattern="^[a-zA-Z_áéíóúñ\s]*$"
-                  ng-model="vm.usuario.apellidos" id="apellido">
-          <div ng-messages="RegisterForm.apellidos.$error">
-            <div ng-message="required">Este campo es requerido.</div>
-            <div ng-message="md-maxlength">El apellidos no puede superar 40 caracteres.</div>
-            <div ng-message="pattern">El apellido no puede contener numeros.</div>
-          </div>
-        </md-input-container>
-        <md-input-container class="md-block">
-          <label>Teléfono</label>
-          <input type="number" min="0" required md-no-asterisk name="telefono"   ng-model="vm.usuario.telefono" id="telefono">
-          <div ng-messages="RegisterForm.telefono.$error">
+    <md-autocomplete md-selected-item="vm.tituloscertificados"
+                     ng-show="!(vm.SelectRol.idRol === 'USER')"
+                     md-search-text="vm.searchTexttitulosycertificados"
+                     md-items="item in vm.titulos(vm.searchTexttitulosycertificados)"
+                     md-item-text="item.titulos"
+                     md-min-length="1"
+                     md-floating-label="Titulos"
+                     name="titulos"
+                    style="margin:0;">
+      <md-item-template style="margin:0;">
+        <span
+        md-highlight-text="vm.searchTexttitulosycertificados"
+        md-highlight-flags="^i">
+          {{item.titulos}}</span>
+      </md-item-template>
+        <md-not-found style="margin:0;">
+          el titulo "{{vm.searchTexttitulosycertificados}}" no fue encontrado.
+        </md-not-found>
+          <div ng-messages="RegisterForm.ciudadDomicilio.$error">
             <div ng-message="required">Este campo es requerido.</div>
           </div>
-        </md-input-container>
-        <md-input-container class="md-block">
-          <label>Dirección</label>
-          <input md-maxlength="100" required md-no-asterisk name="direccion" ng-model="vm.usuario.direccion" id="direccion">
-          <div ng-messages="RegisterForm.direccion.$error">
+    </md-autocomplete>
+
+    <!-- <md-input-container class="md-block">
+      <label>Elija Su Especialidad</label>
+      <md-select ng-model="vm.titulos" required style="color:black;" id="rol">
+        <md-option ng-repeat="titulo in vm.titulos" ng-value="titulo">
+          {{titulo.titulos}}
+        </md-option>
+      </md-select>
+    </md-input-container> -->
+
+
+
+
+    <md-input-container class="md-block">
+      <label>Nombres</label>
+      <input md-maxlength="40" required md-no-asterisk name="nombres" ng-model="vm.usuario.nombres" id="nombre">
+      <div ng-messages="RegisterForm.nombres.$error">
+        <div ng-message="required">Este campo es requerido.</div>
+        <div ng-message="md-maxlength">El nombre no puede superar 40 caracteres.</div>
+      </div>
+    </md-input-container>
+    <md-input-container class="md-block">
+      <label>Apellidos</label>
+      <input md-maxlength="40" required md-no-asterisk name="apellidos" ng-model="vm.usuario.apellidos" id="apellido">
+      <div ng-messages="RegisterForm.apellidos.$error">
+        <div ng-message="required">Este campo es requerido.</div>
+        <div ng-message="md-maxlength">El apellidos no puede superar 40 caracteres.</div>
+      </div>
+    </md-input-container>
+    <md-input-container class="md-block">
+      <label>Teléfono</label>
+      <input md-maxlength="16" required md-no-asterisk name="telefono" ng-model="vm.usuario.telefono" ng-pattern="/^[0-9a-zA-Z]+$/" id="telefono">
+      <div ng-messages="RegisterForm.telefono.$error">
+        <div ng-message="required">Este campo es requerido.</div>
+        <div ng-message="pattern">El Telefono No Es Valido.</div>
+        <div ng-message="md-maxlength">El teléfono no puede superar 16 caracteres.</div>
+      </div>
+    </md-input-container>
+    <md-input-container class="md-block">
+      <label>Dirección</label>
+      <input md-maxlength="100" required md-no-asterisk name="direccion" ng-model="vm.usuario.direccion" id="direccion">
+      <div ng-messages="RegisterForm.direccion.$error">
+        <div ng-message="required">Este campo es requerido.</div>
+        <div ng-message="md-maxlength">La dirección no puede superar 100 caracteres.</div>
+      </div>
+    </md-input-container>
+    <md-autocomplete md-selected-item="vm.usuario.ciudades" md-search-text="vm.searchTextCiudades"
+                     md-items="item in vm.queryCiudades(vm.searchTextCiudades)"
+                     md-item-text="item.nombreCiudad + ' - ' + item.departamentos.nombreDepartamento"
+                     md-min-length="1" md-floating-label="Ciudad"  required name="ciudadDomicilio" id="ciudad" style="margin:0;">
+      <md-item-template style="margin:0;">
+        <span md-highlight-text="vm.searchTextCiudades" md-highlight-flags="^i">
+          {{item.nombreCiudad}} - {{item.departamentos.nombreDepartamento}}</span>
+      </md-item-template>
+        <md-not-found style="margin:0;">
+          La ciudad "{{vm.searchTextCiudades}}" no fue encontrada.
+        </md-not-found>
+          <div ng-messages="RegisterForm.ciudadDomicilio.$error">
             <div ng-message="required">Este campo es requerido.</div>
-            <div ng-message="md-maxlength">La dirección no puede superar 100 caracteres.</div>
           </div>
-        </md-input-container>
-        <md-autocomplete md-selected-item="vm.usuario.ciudades" md-search-text="vm.searchTextCiudades"
-                         md-items="item in vm.queryCiudades(vm.searchTextCiudades)"
-                         md-item-text="item.nombreCiudad + ' - ' + item.departamento.nombreDepartamento"
-                         md-min-length="1" md-floating-label="Ciudad"  required name="ciudadDomicilio" id="ciudad" style="margin:0;">
-          <md-item-template style="margin:0;">
-            <span md-highlight-text="vm.searchTextCiudades" md-highlight-flags="^i">
-              {{item.nombreCiudad}} - {{item.departamento.nombreDepartamento}}</span>
-          </md-item-template>
-            <md-not-found style="margin:0;">
-              La ciudad "{{vm.searchTextCiudades}}" no fue encontrada.
-            </md-not-found>
-              <div ng-messages="RegisterForm.ciudadDomicilio.$error">
-                <div ng-message="required">Este campo es requerido.</div>
-              </div>
-        </md-autocomplete>
+    </md-autocomplete>
 
-        <md-input-container class="md-block" ng-show="!(vm.SelectRol.idRol === 'USER')">
-          <label>Tarjeta Profesional</label>
-          <input type="number" md-maxlength="20"  md-no-asterisk name="tarjetaProfesional" required
-                 ng-model="vm.usuario.tarjetaProfesional" id="tarjeta">
-          <div ng-messages="RegisterForm.tarjetaProfesional.$error">
-            <div ng-message-exp="['required', 'maxlength']">
-                La tarjeta no debe pasar los 20 caracteres / La tarjeta es invalida.
-                El campo es requerido.
-              </div>
+    <md-input-container class="md-block" ng-show="!(vm.SelectRol.idRol === 'USER')">
+      <label>Tarjeta Profesional</label>
+      <input type="text"  md-maxlength="20"  md-no-asterisk name="tarjetaProfesional"
+             ng-model="vm.usuario.tarjetaProfesional" id="tarjeta">
+      <div ng-messages="RegisterForm.tarjetaProfesional.$error">
+        <div ng-message-exp="['required', 'maxlength']">
+            La Tarjeta No Debe Pasar Los 20 Caracteres / La Tarjeta Es Invalida.
           </div>
-        </md-input-container>
+      </div>
+    </md-input-container>
 
-        <md-input-container class="md-block">
-          <label>Documento</label>
-          <input type="number" md-minlength="10"  md-no-asterisk name="documento" required
-                 ng-model="vm.usuario.documento" id="tarjeta">
-          <div ng-messages="RegisterForm.documento.$error">
-            <div ng-message="required">Este campo es requerido.</div>
-            <div ng-message="md-minlength">El telefono no es valido.</div>
+    <md-input-container class="md-block">
+      <label>Documento</label>
+      <input type="text"  md-maxlength="12"  md-no-asterisk name="documento"
+             ng-model="vm.usuario.documento" id="tarjeta">
+      <div ng-messages="RegisterForm.documento.$error">
+        <div ng-message-exp="['required', 'maxlength']">
+            La Tarjeta No Debe Pasar Los 20 Caracteres / La Tarjeta Es Invalida.
           </div>
-        </md-input-container>
+      </div>
+    </md-input-container>
 
-        <div class="">
-          <label style="color:#c0c0c0; margin-bottom:1em;">Fecha De nacimiento</label><br>
-          <md-datepicker ng-model="vm.usuario.fechaNac" required md-placeholder="Fecha" md-max-date="vm.dateMax" name="fechaNac" id="fecha"></md-datepicker>
-            <div ng-messages="RegisterForm.fechaNac.$error">
-              <div ng-message="required">Este campo es requerido.</div>
-            </div>
+    <div class="">
+      <label style="color:#c0c0c0; margin-bottom:1em;">Fecha De nacimiento</label><br>
+      <md-datepicker ng-model="vm.usuario.fechaNac" required md-placeholder="Fecha" md-max-date="vm.dateMax" name="fechaNac" id="fecha"></md-datepicker>
+        <div ng-messages="RegisterForm.fechaNac.$error">
+          <div ng-message="required">Este campo es requerido.</div>
         </div>
-
-        <md-input-container class="md-block">
-          <label>Sexo</label>
-            <md-select ng-model="vm.usuario.sexo" required style="color:black;" id="sexo">
-              <md-option ng-repeat="sexo in [{id: 'M', nombre: 'Masculino'},{id: 'F', nombre: 'Femenino'}]" value="{{sexo.id}}">
-                  {{sexo.nombre}}
-              </md-option>
-            </md-select>
-          <div ng-messages="RegisterForm.sexo.$error">
-            <div ng-message="required">Este campo es requerido.</div>
-          </div>
-        </md-input-container>
-
-        <md-input-container class="md-block">
-          <label>Email</label>
-          <input type="email"  md-maxlength="50" required md-no-asterisk name="email"
-                 ng-pattern="/^.+@.+\..+$/" ng-model="vm.usuario.email" id="email">
-          <div ng-messages="RegisterForm.email.$error">
-            <div ng-message-exp="['required', 'maxlength', 'pattern']">
-                El email no debe pasar los 50 caracteres / El email en invalido.
-              </div>
-          </div>
-        </md-input-container>
-
-        <md-input-container class="md-block">
-          <label>Contraseña</label>
-          <input md-maxlength="20" md-minlength="7" type="password" required md-no-asterisk name="password" ng-model="vm.usuario.password" id="password">
-          <div ng-messages="RegisterForm.password.$error">
-            <div ng-message="required">Este campo es requerido.</div>
-            <div ng-message="md-maxlength">La contraseña no puede superar 20 caracteres.</div>
-              <div ng-message="md-minlength">La contraseña debe ser mayor a 7 caracteres.</div>
-          </div>
-        </md-input-container>
-
-        <!--
-        <md-input-container class="md-block">
-          <md-checkbox style="color:#C0C0C0;font-weight:blod;" class="md-primary" name="TerminosCondiciones" id="chekched"
-                       ng-model="chck">Acepto Los Terminos Y Condiciones</md-checkbox>
-          <div ng-messages="RegisterForm.TerminosCondiciones.$error">
-            <div ng-message="required">Este campo es requerido.</div>
-          </div>
-        </md-input-container>
-    -->
-
-      <section layout="row" layout-sm="column" layout-align="center center" layout-wrap>
-
-          <md-button type="submit" class="md-raised md-primary" id="BotonGuardar" ng-disabled="RegisterForm.$invalid" ng-model="Guardar">Guardar</md-button>
-
-          <md-button ng-href="/" class="md-raised md-warn">Cancelar</md-button>
-
-        </section>
-      </form>
-
-      <script src="validaciones.js"></script>
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
     </div>
-  </div>
+
+    <md-input-container class="md-block">
+      <label>Sexo</label>
+        <md-select ng-model="vm.usuario.sexo" required style="color:black;" id="sexo">
+          <md-option ng-repeat="sexo in [{id: 'M', nombre: 'Masculino'},{id: 'F', nombre: 'Femenino'}]" value="{{sexo.id}}">
+              {{sexo.nombre}}
+          </md-option>
+        </md-select>
+      <div ng-messages="RegisterForm.sexo.$error">
+        <div ng-message="required">Este campo es requerido.</div>
+      </div>
+    </md-input-container>
+
+    <md-input-container class="md-block">
+      <label>Email</label>
+      <input type="email"  md-maxlength="50" required md-no-asterisk name="email"
+             ng-pattern="/^.+@.+\..+$/" ng-model="vm.usuario.email" id="email">
+      <div ng-messages="RegisterForm.email.$error">
+        <div ng-message-exp="['required', 'maxlength', 'pattern']">
+            El Email No Debe Pasar Los 50 Caracteres / El Email En Invalido.
+          </div>
+      </div>
+    </md-input-container>
+
+    <md-input-container class="md-block">
+      <label>Contraseña</label>
+      <input md-maxlength="20" type="password" required md-no-asterisk name="password" ng-model="vm.usuario.password" id="password">
+      <div ng-messages="RegisterForm.password.$error">
+        <div ng-message="required">Este campo es requerido.</div>
+        <div ng-message="md-maxlength">El nombre no puede superar 60 caracteres.</div>
+      </div>
+    </md-input-container>
+
+    <!--
+    <md-input-container class="md-block">
+      <md-checkbox style="color:#C0C0C0;font-weight:blod;" class="md-primary" name="TerminosCondiciones" id="chekched"
+                   ng-model="chck">Acepto Los Terminos Y Condiciones</md-checkbox>
+      <div ng-messages="RegisterForm.TerminosCondiciones.$error">
+        <div ng-message="required">Este campo es requerido.</div>
+      </div>
+    </md-input-container>
+-->
+
+  <section layout="row" layout-sm="column" layout-align="center center" layout-wrap>
+
+      <md-button type="submit" class="md-raised md-primary" id="BotonGuardar" ng-disabled="RegisterForm.$invalid" ng-model="Guardar">Guardar</md-button>
+
+      <md-button ng-href="/" class="md-raised md-warn">Cancelar</md-button>
+
+    </section>
+  </form>
+
+  <script src="validaciones.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 </section>

@@ -3,7 +3,8 @@
 
     angular.module('app.Usuarios',[
       'app.usuariosList',
-      //'app.consultasList',
-      'app.citacalendario'
+      'app.consultasList',
+      'app.consulta',
+      'app.citamedica'
     ]);
 })();

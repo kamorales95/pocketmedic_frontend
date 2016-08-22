@@ -2,7 +2,8 @@
   margin-top: 5em;
   color: #2271b3;
   font-size: 1.5em;
-  padding-bottom: 5em;
+  height: 37em;
+  width: 100%;
 }
 .heal {
   display: inline-block;
@@ -12,6 +13,10 @@
   margin-right: 15em;
   border-radius: 18em;
 }
+.care1 {
+  border-radius: 50%;
+  width: 310%;
+}
 .sectionTitle {
   text-align: justify;
   font-size: 3em;
@@ -19,11 +24,22 @@
   margin-bottom: 2.5em;
   margin-top: 1em;
 }
-@media screen and (max-width: 403px) {
-  .sectionTitle {
-    font-size: 36px;
+.portafoliocontainer-Title {
+  font-size: 1.8em;
+}
+.text {
+  color: #000;
+  width: 100%;
+  font-size: 17px;
+}
+.col-xs-12 {
+  left: 6em;
+}
+@media screen and (max-width: 1280px) {
+  .col-xs-12 {
+    width: 67%;
   }
   .portafoliocontainer-Title {
-    font-size: 22px;
+    width: 120%;
   }
 }

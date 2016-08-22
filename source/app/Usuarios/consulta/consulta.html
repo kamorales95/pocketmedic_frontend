@@ -1,0 +1,36 @@
+<section class="Sectionconsulta">
+    <form id="FormRegistro" name="ConsultaForm" ng-submit="vm.create()" class="FormConsulta">
+      <h1 class="FormConsulta-tittle">Crear Consulta</h1>
+
+      <md-input-container class="md-block">
+        <label>Descripción</label>
+        <input md-maxlength="45" required md-no-asterisk name="descripcion" ng-model="vm.consultas.descripcion" id="descripcion">
+        <div ng-messages="ConsultaForm.descripcion.$error">
+          <div ng-message="required">Este campo es requerido.</div>
+          <div ng-message="md-maxlength">No puede superar 40 caracteres.</div>
+        </div>
+      </md-input-container>
+
+
+      <!--
+      <div class="">
+        <label style="color:#c0c0c0; margin-bottom:1em;">Fecha Consulta</label><br>
+        <md-datepicker ng-model="vm.consulta.fechaCita" required md-placeholder="Fecha" name="fechaConsu" id="fecha"></md-datepicker>
+          <div ng-messages="ConsultaForm.fechaCita.$error">
+            <div ng-message="required">Este campo es requerido.</div>
+          </div>
+      </div><br>
+    -->
+
+      <section layout="row" layout-sm="column" layout-align="center center" layout-wrap style="margin-top:.5em;">
+          <md-button type="submit" class="md-raised md-primary" id="Guardar" ng-disabled="ConsultaForm.$invalid"
+                     ng-model="Guardar"
+                     style="background:#4FC3F7;color:white;padding:1px 5em;">Enviar</md-button>
+          <md-button ng-href="/" class="md-raised md-warn" style="background:#01579B;color:white;padding:1px 5em;">Cancelar</md-button>
+      </section>
+
+      <!-- <md-button type="submit" class="md-raised md-primary" id="BotonGuardar" ng-disabled="ConsultaForm.$invalid" ng-model="Guardar">Guardar</md-button>
+      <md-button ng-href="/" class="md-raised md-warn">Cancelar</md-button> -->
+
+    </form>
+</section>

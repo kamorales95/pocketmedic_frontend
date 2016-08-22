@@ -23,10 +23,7 @@
         "dist/css/bootstrap.css",
         "dist/js/bootstrap.js"
       ]
-    },
-    "font-awesome" : {
-      "main" : "css/font-awesome.css"
-}
+    }
   },
   "dependencies": {
     "angular": "^1.5.0",
@@ -37,8 +34,6 @@
     "jquery": "^2.2.1",
     "satellizer": "^0.14.0",
     "angular-material": "^1.0.6",
-    "ng-table": "^0.8.3",
-    "angular-ui-calendar": "^1.0.1",
-    "font-awesome": "^4.6.3"
+    "ng-table": "^0.8.3"
   }
 }

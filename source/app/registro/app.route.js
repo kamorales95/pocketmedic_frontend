@@ -3,7 +3,8 @@
 
     angular.module('app.registro.route', [
 
-    ]).config(configure);
+    ])
+        .config(configure);
 
     //Se inyecta los parametros
     configure.$inject = ['$stateProvider', '$urlRouterProvider'];
@@ -17,6 +18,17 @@
             .state('registro', {
                 url: '/registro',
                 template: '<registro/>'
+                /*views: {
+                    'registro': {
+                        template: '<registro/>'
+                    },
+                    'piepagina': {
+                        template: '<piepagina/>'
+                    },
+                    'encabezado': {
+                        template: '<encabezado/>'
+                    }
+                }*/
             });
     };
 })();
